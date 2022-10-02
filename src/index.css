@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Cormorant';
+  color: #1E6457;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#36B29C"
+        primary: "#36B29C",
+        primaryDark: "#1E6457"
       },
       fontFamily: {
         calligraffitti: ['Calligraffitti', 'cursive'],

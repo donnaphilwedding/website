@@ -9,7 +9,7 @@ interface NavigationDrawerLinkProps {
 
 export const NavigationDrawerLink: FC<NavigationDrawerLinkProps> = ({ page, onClick }) => {
   return (
-    <Link to={page.link} onClick={onClick} className="px-5 py-2">
+    <Link to={page.link} onClick={onClick} className="px-5 py-2 border-t-2 border-primaryDark">
       {page.name}
     </Link>
   );
