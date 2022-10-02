@@ -15,7 +15,7 @@ export const PageContainer: FC<PageContainerProps> = ({ children }) => {
         }}
       />
       <div className="absolute w-full h-[90vh] bg-gradient-to-b from-primary/25 to-white" />
-      <div className="max-w-4xl mx-auto">{children}</div>
+      <div className="max-w-4xl mx-auto relative">{children}</div>
     </div>
   );
 };
