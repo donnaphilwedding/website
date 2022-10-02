@@ -23,6 +23,7 @@
   },
   "scripts": {
     "start": "concurrently 'npx tailwindcss -i ./src/index.css -o ./dist/output.css --watch' 'react-scripts start'",
+    "tailwind:build": "tailwindcss build -i src/index.css -o public/styles.css",
     "build": "npm run tailwind:build && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
