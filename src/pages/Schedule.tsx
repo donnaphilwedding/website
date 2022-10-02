@@ -1,7 +1,11 @@
 import { FC } from 'react';
+import { Header } from '../components/Header';
 
 export const Schedule: FC = () => {
-    return <div className="text-3xl bg-primary">
-        schedule
+  return (
+    <div>
+      <Header />
+      schedule
     </div>
-}
+  );
+};

@@ -2,10 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
-    colors: {
-      primary: "#36B29C"
-    },
     extend: {
+      colors: {
+        primary: "#36B29C"
+      },
       fontFamily: {
         calligraffitti: ['Calligraffitti', 'cursive']
       }

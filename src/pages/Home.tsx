@@ -1,7 +1,10 @@
 import { FC } from 'react';
+import { Header } from '../components/Header';
 
 export const Home: FC = () => {
-    return <div className="text-3xl bg-primary font-calligraffitti">
-        Home
+  return (
+    <div>
+      <Header />
     </div>
-}
+  );
+};
