@@ -7,7 +7,9 @@ module.exports = {
         primary: "#36B29C"
       },
       fontFamily: {
-        calligraffitti: ['Calligraffitti', 'cursive']
+        calligraffitti: ['Calligraffitti', 'cursive'],
+        cormorant: ['Cormorant', 'serif'],
+        cormorantSc: ['Cormorant SC', 'serif']
       }
     }
   },

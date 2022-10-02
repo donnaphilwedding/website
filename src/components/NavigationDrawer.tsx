@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import Drawer from 'react-modern-drawer';
-import { Link } from 'react-router-dom';
 import { NavigationPage } from './Header';
+import {NavigationDrawerLink} from './NavigationDrawerLink';
 
 interface NavigationDrawerProps {
   open: boolean;
@@ -14,7 +14,7 @@ export const NavigationDrawer: FC<NavigationDrawerProps> = ({ open, onClose, pag
     <Drawer direction="left" open={open} onClose={onClose}>
       <div className="flex flex-col">
         {pages.map(page => (
-          <Link to={page.link} onClick={onClose}>{page.name}</Link>
+          <NavigationDrawerLink page={page} onClick={onClose} />
         ))}
       </div>
     </Drawer>
