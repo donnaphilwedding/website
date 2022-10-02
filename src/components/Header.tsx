@@ -12,23 +12,25 @@ export const Header: FC = () => {
 
   const pages: NavigationPage[] = [
     {
-      name: "Home",
-      link: "/"
+      name: 'Home',
+      link: '/'
     },
     {
-      name: "Schedule",
-      link: "/schedule"
+      name: 'Schedule',
+      link: '/schedule'
     }
-  ]
+  ];
 
   return (
     <div>
       <div className="bg-primary text-white flex justify-between items-center p-3">
-        <button onClick={() => setDrawerOpen(true)}>
-          <FiMenu />
-        </button>
-        <div className="text-3xl font-calligraffitti mb-[-10px]">{'D&P'}</div>
-        <div />
+        <div className="w-12">
+          <button onClick={() => setDrawerOpen(true)}>
+            <FiMenu />
+          </button>
+        </div>
+        <div className="text-3xl flex-1 font-calligraffitti mb-[-10px]">{'D&P'}</div>
+        <div className="w-12" />
       </div>
       <NavigationDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} pages={pages} />
     </div>
