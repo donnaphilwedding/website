@@ -4,6 +4,11 @@ module.exports = {
   theme: {
     colors: {
       primary: "#36B29C"
+    },
+    extend: {
+      fontFamily: {
+        calligraffitti: ['Calligraffitti', 'cursive']
+      }
     }
   },
   plugins: [],
