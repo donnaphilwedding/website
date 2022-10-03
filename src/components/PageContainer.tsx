@@ -7,10 +7,9 @@ export const PageContainer: FC<PageContainerProps> = ({ children }) => {
   return (
     <div className="relative">
       <div
-        className="absolute w-full h-[90vh]"
+        className="absolute w-full h-[90vh] bg-auto xl:bg-cover bg-bottom"
         style={{
           backgroundImage: `url(${BackgroundImage})`,
-          backgroundPosition: '50% -500px',
           backgroundRepeat: 'no-repeat'
         }}
       />
