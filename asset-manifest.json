@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.8ec301c8.css",
-    "main.js": "/website/static/js/main.97fb3abf.js",
+    "main.css": "/website/static/css/main.5056fa4c.css",
+    "main.js": "/website/static/js/main.70980f71.js",
     "static/js/787.28cb0dcd.chunk.js": "/website/static/js/787.28cb0dcd.chunk.js",
+    "static/media/woodlands.jpeg": "/website/static/media/woodlands.d202c6d31f0a73a00c15.jpeg",
     "static/media/break.svg": "/website/static/media/break.1968e614f02113753159d5d14f808d16.svg",
     "index.html": "/website/index.html",
-    "main.8ec301c8.css.map": "/website/static/css/main.8ec301c8.css.map",
-    "main.97fb3abf.js.map": "/website/static/js/main.97fb3abf.js.map",
+    "main.5056fa4c.css.map": "/website/static/css/main.5056fa4c.css.map",
+    "main.70980f71.js.map": "/website/static/js/main.70980f71.js.map",
     "787.28cb0dcd.chunk.js.map": "/website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ec301c8.css",
-    "static/js/main.97fb3abf.js"
+    "static/css/main.5056fa4c.css",
+    "static/js/main.70980f71.js"
   ]
 }
