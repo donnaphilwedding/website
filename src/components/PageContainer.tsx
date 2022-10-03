@@ -1,5 +1,5 @@
 import { FC, HTMLAttributes } from 'react';
-import BackgroundImage from './woodlands.jpeg';
+import BackgroundImage from '../images/woodlands.jpeg';
 
 interface PageContainerProps extends HTMLAttributes<HTMLDivElement> {}
 
