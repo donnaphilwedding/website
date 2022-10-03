@@ -11,7 +11,7 @@ export const PageContainer: FC<PageContainerProps> = ({ children }) => {
         style={{
           backgroundImage: `url(${BackgroundImage})`,
           backgroundPosition: '50% -500px',
-          backgroundRepeat: 'none'
+          backgroundRepeat: 'no-repeat'
         }}
       />
       <div className="absolute w-full h-[90vh] bg-gradient-to-b from-primary/25 to-white" />
