@@ -549,12 +549,20 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.absolute {
-  position: absolute;
+.fixed {
+  position: fixed;
 }
 
 .relative {
   position: relative;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.z-50 {
+  z-index: 50;
 }
 
 .mx-auto {
@@ -590,8 +598,8 @@ video {
   height: 100%;
 }
 
-.h-\[90vh\] {
-  height: 90vh;
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .h-\[30vh\] {
@@ -729,6 +737,10 @@ video {
 .py-10 {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .text-center {
