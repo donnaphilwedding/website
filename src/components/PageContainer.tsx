@@ -18,7 +18,7 @@ export const PageContainer: FC<PageContainerProps> = ({ children, pageTitle }) =
       />
       <div className="fixed w-full h-[100vh] bg-gradient-to-b from-primary/25 to-white top-0" />
       <div className="fixed w-full top-0 z-50"><Header title={pageTitle}/></div>
-      <div className="relative pt-10">
+      <div className="relative pt-10 md:pt-16">
 
         <div className="max-w-4xl mx-auto ">
 

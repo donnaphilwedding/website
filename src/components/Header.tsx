@@ -1,6 +1,7 @@
 import { FC, useState } from 'react';
 import { NavigationDrawer } from './NavigationDrawer';
 import { FiMenu } from 'react-icons/fi';
+import { ReactComponent as Break } from '../images/breakWhite.svg';
 
 export interface NavigationPage {
   name: string;
@@ -33,14 +34,16 @@ export const Header: FC<HeaderProps> = ({ title }) => {
             <FiMenu />
           </button>
         </div>
-        <div className='hidden sm:block'>
+        <div className="hidden md:flex items-center gap-2">
+          <Break className="h-10 w-64"></Break>
           {title ? (
             <div className="font-cormorantSc text-2xl">{title}</div>
           ) : (
             <div className="text-3xl flex-1 text-center font-calligraffitti mb-[-10px]">{'D&P'}</div>
           )}
+          <Break className="h-10 w-64"></Break>
         </div>
-        <div className="sm:hidden text-3xl flex-1 text-center font-calligraffitti mb-[-10px]">{'D&P'}</div>
+        <div className="md:hidden text-3xl flex-1 text-center font-calligraffitti mb-[-10px]">{'D&P'}</div>
         <div className="w-12" />
       </div>
       <NavigationDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} pages={pages} />
