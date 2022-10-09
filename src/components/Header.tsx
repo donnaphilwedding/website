@@ -33,12 +33,14 @@ export const Header: FC<HeaderProps> = ({ title }) => {
             <FiMenu />
           </button>
         </div>
-        {title ? (
-          <div className="font-cormorantSc text-2xl">{title}</div>
-        ) : (
-          <div className="text-3xl flex-1 text-center font-calligraffitti mb-[-10px]">{'D&P'}</div>
-        )}
-
+        <div className='hidden sm:block'>
+          {title ? (
+            <div className="font-cormorantSc text-2xl">{title}</div>
+          ) : (
+            <div className="text-3xl flex-1 text-center font-calligraffitti mb-[-10px]">{'D&P'}</div>
+          )}
+        </div>
+        <div className="sm:hidden text-3xl flex-1 text-center font-calligraffitti mb-[-10px]">{'D&P'}</div>
         <div className="w-12" />
       </div>
       <NavigationDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} pages={pages} />
