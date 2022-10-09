@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import { Header } from '../components/Header';
 import { PageContainer } from '../components/PageContainer';
 import Break from '../images/break.svg';
 import AlexWedding from '../images/AlexWedding.jpg';
@@ -8,7 +7,6 @@ import {Link} from 'react-router-dom';
 export const Home: FC = () => {
   return (
     <div>
-      <Header />
       <PageContainer>
         <div className="py-10 flex flex-col items-center">
           <div className="bg-white p-5 rounded-lg w-5/6 md:w-1/2 mb-10">
