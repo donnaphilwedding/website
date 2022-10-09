@@ -7,7 +7,11 @@ export interface NavigationPage {
   link: string;
 }
 
-export const Header: FC = () => {
+interface HeaderProps {
+  title?: string;
+}
+
+export const Header: FC<HeaderProps> = ({ title }) => {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
   const pages: NavigationPage[] = [
@@ -29,8 +33,13 @@ export const Header: FC = () => {
             <FiMenu />
           </button>
         </div>
-        <div className="text-3xl flex-1 text-center lg:text-right font-calligraffitti mb-[-10px]">{'D&P'}</div>
-        <div className="block lg:hidden w-12" />
+        {title ? (
+          <div className="font-cormorantSc text-2xl">{title}</div>
+        ) : (
+          <div className="text-3xl flex-1 text-center font-calligraffitti mb-[-10px]">{'D&P'}</div>
+        )}
+
+        <div className="w-12" />
       </div>
       <NavigationDrawer open={drawerOpen} onClose={() => setDrawerOpen(false)} pages={pages} />
     </div>
