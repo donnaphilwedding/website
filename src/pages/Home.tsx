@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { PageContainer } from '../components/PageContainer';
 import Break from '../images/break.svg';
 import AlexWedding from '../images/AlexWedding.jpg';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 export const Home: FC = () => {
   return (
@@ -29,7 +29,13 @@ export const Home: FC = () => {
               We’ll be organising several events across the weekend, so we can spend as much time as possible with all
               our guests.
             </p>
-            <p>Click <Link className="underline" to='/schedule'>here</Link> to see the schedule.</p>
+            <p>
+              Click{' '}
+              <Link className="underline" to="/schedule">
+                here
+              </Link>{' '}
+              to see the schedule.
+            </p>
           </div>
           <div
             className="w-full sm:w-5/6 h-[30vh] sm:h-[50vh] rounded-none sm:rounded-lg bg-cover bg-center sm:bg-bottom"
