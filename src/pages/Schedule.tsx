@@ -8,6 +8,7 @@ export const Schedule: FC = () => {
     <PageContainer pageTitle="Schedule">
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="Schedule" className="md:hidden" />
+        <div className="flex flex-col gap-10 md:gap-5">
         <InfoSection title="The Week Before" className="flex flex-col gap-5">
           <p>During the week before the wedding, we’ll be holding a low key ceremony with close friends and family.</p>
           <p>
@@ -75,6 +76,7 @@ export const Schedule: FC = () => {
             </p>
           </div>
         </InfoSection>
+        </div>
       </div>
     </PageContainer>
   );

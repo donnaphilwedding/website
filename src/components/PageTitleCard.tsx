@@ -8,7 +8,7 @@ interface PageTitleCardProps extends HTMLAttributes<HTMLDivElement> {
 
 export const PageTitleCard: FC<PageTitleCardProps> = ({ name, className }) => {
   return (
-    <div className={merge(className, "bg-white rounded-lg w-72 p-1 flex flex-col items-center")}>
+    <div className={merge(className, "bg-white rounded-lg py-1 px-5 flex flex-col items-center")}>
       <div
         className="h-8 w-40"
         style={{ backgroundImage: `url(${Break})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}

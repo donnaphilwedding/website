@@ -1,5 +1,5 @@
 import { FC, HTMLAttributes } from 'react';
-import BackgroundImage from '../images/woodlands.jpeg';
+import BackgroundImage from '../images/museum.jpg';
 import { Header } from './Header';
 
 interface PageContainerProps extends HTMLAttributes<HTMLDivElement> {
@@ -10,7 +10,7 @@ export const PageContainer: FC<PageContainerProps> = ({ children, pageTitle }) =
   return (
     <div>
       <div
-        className="fixed w-full h-[100vh] bg-auto xl:bg-cover bg-bottom top-0"
+        className="fixed w-full h-[100vh] bg-cover bg-bottom top-0"
         style={{
           backgroundImage: `url(${BackgroundImage})`,
           backgroundRepeat: 'no-repeat'
