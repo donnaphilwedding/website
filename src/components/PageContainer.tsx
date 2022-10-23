@@ -8,7 +8,7 @@ interface PageContainerProps extends HTMLAttributes<HTMLDivElement> {
 
 export const PageContainer: FC<PageContainerProps> = ({ children, pageTitle }) => {
   return (
-    <div>
+    <div className='bg-background'>
       <div
         className="fixed w-full h-[100vh] bg-cover bg-bottom top-0"
         style={{
@@ -16,7 +16,7 @@ export const PageContainer: FC<PageContainerProps> = ({ children, pageTitle }) =
           backgroundRepeat: 'no-repeat'
         }}
       />
-      <div className="fixed w-full h-[100vh] bg-gradient-to-b from-primary/25 to-white top-0" />
+      <div className="fixed w-full h-[100vh] bg-gradient-to-b from-primary/25 to-background top-0" />
       <div className="fixed w-full top-0 z-50"><Header title={pageTitle}/></div>
       <div className="relative pt-10 md:pt-16">
 

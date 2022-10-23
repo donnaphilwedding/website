@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         primary: "#36B29C",
-        primaryDark: "#1E6457"
+        primaryDark: "#1E6457",
+        background: "#FFFAF6"
       },
       fontFamily: {
         calligraffitti: ['Calligraffitti', 'cursive'],
