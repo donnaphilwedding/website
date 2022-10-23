@@ -28,7 +28,7 @@ export const Header: FC<HeaderProps> = ({ title }) => {
 
   return (
     <div>
-      <div className="bg-primary text-white flex justify-between items-center py-3 px-5">
+      <div className="bg-primary text-white flex justify-between items-center py-3 px-5 border-b border-gray-300">
         <div className="w-12">
           <button onClick={() => setDrawerOpen(true)}>
             <FiMenu />
