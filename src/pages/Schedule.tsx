@@ -43,7 +43,7 @@ export const Schedule: FC = () => {
             </p>
           </div>
           <div>
-            <p className="font-bold">16:00: Drinks at the Eastgate Hotel</p>
+            <p className="font-bold">16:00 - 18:00: Drinks at the Eastgate Hotel</p>
             <div className="flex flex-col gap-3">
               <p>While the event is being set up, people can meet in the bar at the Eastgate Hotel.</p>
             </div>
@@ -74,6 +74,20 @@ export const Schedule: FC = () => {
             <p>
               <b>Dress code:</b> Smart, but comfortable. If you hate wearing a tie, a nice shirt is totally fine!
             </p>
+          </div>
+        </InfoSection>
+        <InfoSection secondary title="Sunday 17th September" className="flex flex-col gap-5">
+          <div>
+            <p className="font-bold">7:30 - 10:30: Breakfast at Eastgate Hotel</p>
+            <p>We’ll be hanging out in the lounge to greet any early arrivals.</p>
+          </div>
+          <div>
+            <p className="font-bold">12:00: TBA</p>
+            <div className="flex flex-col gap-3">
+              <p>
+                We're planning a small event on the Sunday before people leave. Possibly booking a cinema screen? We'll update people when we decide.
+              </p>
+            </div>
           </div>
         </InfoSection>
         </div>
