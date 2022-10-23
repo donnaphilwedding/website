@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.e570a2c3.css",
-    "main.js": "/website/static/js/main.63704f31.js",
+    "main.css": "/website/static/css/main.3b8b0e24.css",
+    "main.js": "/website/static/js/main.adedff9a.js",
     "static/js/787.28cb0dcd.chunk.js": "/website/static/js/787.28cb0dcd.chunk.js",
+    "static/media/museum.jpg": "/website/static/media/museum.f8a2e178ad1d4fd530e0.jpg",
     "static/media/AlexWedding.jpg": "/website/static/media/AlexWedding.15ddd50aaa32da57036d.jpg",
-    "static/media/woodlands.jpeg": "/website/static/media/woodlands.d202c6d31f0a73a00c15.jpeg",
     "static/media/breakWhite.svg": "/website/static/media/breakWhite.c8e8baa47080059bd26c277135c7df45.svg",
     "static/media/break.svg": "/website/static/media/break.1968e614f02113753159d5d14f808d16.svg",
     "index.html": "/website/index.html",
-    "main.e570a2c3.css.map": "/website/static/css/main.e570a2c3.css.map",
-    "main.63704f31.js.map": "/website/static/js/main.63704f31.js.map",
+    "main.3b8b0e24.css.map": "/website/static/css/main.3b8b0e24.css.map",
+    "main.adedff9a.js.map": "/website/static/js/main.adedff9a.js.map",
     "787.28cb0dcd.chunk.js.map": "/website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e570a2c3.css",
-    "static/js/main.63704f31.js"
+    "static/css/main.3b8b0e24.css",
+    "static/js/main.adedff9a.js"
   ]
 }
