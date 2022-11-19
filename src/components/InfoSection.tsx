@@ -9,9 +9,9 @@ interface InfoSectionProps extends HTMLAttributes<HTMLDivElement> {
 export const InfoSection: FC<InfoSectionProps> = ({ title, secondary, children, className }) => {
   let cardClass = 'md:rounded-lg w-full py-3 px-3 md:px-5';
   if (secondary) {
-    cardClass = merge(cardClass, 'bg-white');
-  } else {
     cardClass = merge(cardClass, 'bg-primary text-white');
+  } else {
+    cardClass = merge(cardClass, 'bg-white');
   }
 
   return (
