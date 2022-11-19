@@ -14,7 +14,7 @@ export const NavigationDrawer: FC<NavigationDrawerProps> = ({ open, onClose, pag
   return (
     <Drawer direction="left" open={open} onClose={onClose}>
       <FlowerBorderLogo className="p-2" />
-      <div className="flex flex-col border-b-2 border-primaryDark">
+      <div className="flex flex-col">
         {pages.map(page => (
           <NavigationDrawerLink page={page} onClick={onClose} />
         ))}
