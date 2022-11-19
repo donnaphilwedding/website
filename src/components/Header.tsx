@@ -27,6 +27,10 @@ export const Header: FC<HeaderProps> = ({ title }) => {
     {
       name: 'Travel',
       link: '/travel'
+    },
+    {
+      name: 'Accommodation',
+      link: '/accommodation'
     }
   ];
 
