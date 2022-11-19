@@ -17,7 +17,7 @@ export const InfoSection: FC<InfoSectionProps> = ({ title, secondary, children, 
   return (
     <div className={cardClass}>
       <p className="font-cormorantSc text-2xl text-center mb-2">{title}</p>
-      <div className={className}>{children}</div>
+      <div className={merge("flex flex-col gap-5", className)}>{children}</div>
     </div>
   );
 };
