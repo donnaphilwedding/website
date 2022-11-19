@@ -9,7 +9,7 @@ export const Travel: FC = () => {
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="Travel Advice" className="md:hidden" />
         <div className="flex flex-col gap-10 md:gap-5">
-          <InfoSection title="Arriving from the US" className="flex flex-col gap-5">
+          <InfoSection title="Arriving from the US">
             <p>This is a work in progress schedule. Times are likely to change!</p>
           </InfoSection>
         </div>
