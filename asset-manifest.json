@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/website/static/css/main.37862525.css",
-    "main.js": "/website/static/js/main.217f7a87.js",
+    "main.js": "/website/static/js/main.a0ea4efa.js",
     "static/js/787.28cb0dcd.chunk.js": "/website/static/js/787.28cb0dcd.chunk.js",
     "static/media/museum.jpg": "/website/static/media/museum.f8a2e178ad1d4fd530e0.jpg",
     "static/media/AlexWedding.jpg": "/website/static/media/AlexWedding.15ddd50aaa32da57036d.jpg",
@@ -12,11 +12,11 @@
     "static/media/HotelBar.png": "/website/static/media/HotelBar.79baa50dbe3781d6187b.png",
     "index.html": "/website/index.html",
     "main.37862525.css.map": "/website/static/css/main.37862525.css.map",
-    "main.217f7a87.js.map": "/website/static/js/main.217f7a87.js.map",
+    "main.a0ea4efa.js.map": "/website/static/js/main.a0ea4efa.js.map",
     "787.28cb0dcd.chunk.js.map": "/website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.37862525.css",
-    "static/js/main.217f7a87.js"
+    "static/js/main.a0ea4efa.js"
   ]
 }
