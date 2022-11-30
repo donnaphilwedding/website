@@ -622,12 +622,16 @@ video {
   height: 2rem;
 }
 
-.h-9 {
-  height: 2.25rem;
-}
-
 .h-\[30vh\] {
   height: 30vh;
+}
+
+.h-\[50vh\] {
+  height: 50vh;
+}
+
+.h-9 {
+  height: 2.25rem;
 }
 
 .w-full {
@@ -866,6 +870,10 @@ code {
     margin-bottom: 2.5rem;
   }
 
+  .sm\:h-\[70vh\] {
+    height: 70vh;
+  }
+
   .sm\:h-\[50vh\] {
     height: 50vh;
   }
@@ -876,6 +884,10 @@ code {
 
   .sm\:w-5\/6 {
     width: 83.333333%;
+  }
+
+  .sm\:flex-row {
+    flex-direction: row;
   }
 
   .sm\:rounded-lg {
