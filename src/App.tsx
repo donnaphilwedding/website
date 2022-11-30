@@ -5,10 +5,12 @@ import { Home } from './pages/Home';
 import { Schedule } from './pages/Schedule';
 import { Travel } from './pages/Travel';
 import { Accommodation } from './pages/Accommodation';
+import ScrollToTop from './components/ScrollToTop';
 
 export const App: FC = () => {
   return (
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/travel" element={<Travel />} />
         <Route path="/schedule" element={<Schedule />} />
