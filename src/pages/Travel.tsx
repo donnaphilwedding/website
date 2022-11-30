@@ -21,32 +21,26 @@ export const Travel: FC = () => {
           </InfoSection>
           <InfoSection secondary title="Arriving from London">
             <p>
-              If you’re coming from London, the{' '}
+              If you’re coming from London, we recommend the{' '}
               <a className="underline" href="https://www.oxfordtube.com/">
                 Oxford Tube
-              </a>{' '}
-              is well recommended. Buses leave from a few places, including Victoria and Marble Arch. The buses are
-              every 20 minutes, and there's a stop very near the Eastgate.
-            </p>
-            <p>
-              There are taxis available outside the train station, but Oxford's traffic system means that it will likely
-              be faster to walk.
+              </a>
+              . Buses leave from a few places, including Victoria and Marble Arch. The buses are every 20 minutes, and
+              there's a stop very near the Eastgate.
             </p>
           </InfoSection>
           <InfoSection title="Arriving by train">
             <p>
-              The train station is about a mile from the Eastgate Hotel. Trains run directly from London Paddington or
+              The train station is about a mile from the Eastgate Hotel. From the south, trains run directly from London Paddington or
               Marylebone. To get here from the north, you'll likely need to change at Birmingham New Street.
             </p>
             <p>
-              There are taxis available outside the train station, but Oxford's traffic system means that it will likely
-              be faster to walk.
+              Taxis are available outside the station, or it's a 15 minute walk to the Eastgate Hotel. Due to Oxford's traffic system, it will likely be faster to walk.
             </p>
           </InfoSection>
           <InfoSection secondary title="Arriving by car">
             <p>
-              Driving in central Oxford is fairly difficult. The Eastgate Hotel has a limited amount of parking, but it
-              needs to be booked in advance.
+              Driving in central Oxford is fairly difficult. The Eastgate Hotel has a very limited amount of parking, which needs to be booked in advance.
             </p>
             <p>
               If you’re planning to drive, the best plan is to leave your car at Thornhill Park and Ride, and take the
