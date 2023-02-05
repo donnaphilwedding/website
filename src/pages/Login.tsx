@@ -1,4 +1,4 @@
-import { FC, useContext, useState } from 'react';
+import { FC, KeyboardEventHandler, useContext, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserContext, UserType } from '../components/auth/UserContext';
 import { Loader } from '../components/Loader';
@@ -26,6 +26,12 @@ export const Login: FC = () => {
     }
   };
 
+  const onKeyDown: KeyboardEventHandler<HTMLInputElement> = (event) => {
+    if (event.key === 'Enter') {
+      onSubmit();
+    } 
+  }
+
   return (
     <PageContainer noHeader>
       <div className="w-full h-screen flex items-center justify-center">
@@ -33,12 +39,11 @@ export const Login: FC = () => {
           <div className="w-full p-5 bg-primary text-white">
           <p className="font-calligraffitti text-4xl mb-[-6px] w-full text-center">{'D&P'}</p>
             </div>
-          
-          <form onSubmit={onSubmit}>
             <div className="flex flex-col gap-5 p-5">
               <input
                 className="border border-gray-300 p-2 rounded-md"
                 value={input}
+                onKeyDown={onKeyDown}
                 onChange={e => setInput(e.target.value)}
                 placeholder={'Please enter password'}
               ></input>
@@ -50,7 +55,6 @@ export const Login: FC = () => {
                 {pretendingToLoad ? <Loader className="h-5 w-5"></Loader> : 'Enter'}
               </button>
             </div>
-          </form>
         </div>
       </div>
     </PageContainer>
