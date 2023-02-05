@@ -32,7 +32,7 @@ export const Travel: FC = () => {
           <InfoSection title="Arriving by train">
             <p>
               The train station is about a mile from the Eastgate Hotel. From the south, trains run directly from London Paddington or
-              Marylebone. To get here from the north, you'll likely need to change at Birmingham New Street.
+              Marylebone. To get here from the north, you'll probably need to change at Birmingham New Street.
             </p>
             <p>
               Taxis are available outside the station, or it's a 15 minute walk to the Eastgate Hotel. Due to Oxford's traffic system, it will likely be faster to walk.
