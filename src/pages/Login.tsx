@@ -50,7 +50,7 @@ export const Login: FC = () => {
               {error && <div className="text-red-500">Incorrect password. Please try again.</div>}
               <button
                 className="bg-primary p-2 rounded-md text-gray-100 flex justify-center items-center h-8"
-                type="submit"
+                onClick={onSubmit}
               >
                 {pretendingToLoad ? <Loader className="h-5 w-5"></Loader> : 'Enter'}
               </button>
