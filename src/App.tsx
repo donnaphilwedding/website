@@ -6,17 +6,25 @@ import { Schedule } from './pages/Schedule';
 import { Travel } from './pages/Travel';
 import { Accommodation } from './pages/Accommodation';
 import ScrollToTop from './components/ScrollToTop';
+import { Login } from './pages/Login';
+import { RequireLogin } from './components/auth/RequireLogin';
+import { UserContextProvider } from './components/auth/UserContext';
 
 export const App: FC = () => {
   return (
     <HashRouter>
       <ScrollToTop />
-      <Routes>
-        <Route path="/travel" element={<Travel />} />
-        <Route path="/schedule" element={<Schedule />} />
-        <Route path="/accommodation" element={<Accommodation />} />
-        <Route path="*" element={<Home />} />
-      </Routes>
+      <UserContextProvider>
+        <Routes>
+          <Route element={<RequireLogin />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/travel" element={<Travel />} />
+            <Route path="/schedule" element={<Schedule />} />
+            <Route path="/accommodation" element={<Accommodation />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
+        </Routes>
+      </UserContextProvider>
     </HashRouter>
   );
 };
