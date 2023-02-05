@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.1b14a3a3.css",
-    "main.js": "/website/static/js/main.3d85406f.js",
+    "main.css": "/website/static/css/main.2d284d2a.css",
+    "main.js": "/website/static/js/main.6160e47d.js",
     "static/js/787.28cb0dcd.chunk.js": "/website/static/js/787.28cb0dcd.chunk.js",
     "static/media/museum.jpg": "/website/static/media/museum.f8a2e178ad1d4fd530e0.jpg",
     "static/media/AlexWedding.jpg": "/website/static/media/AlexWedding.15ddd50aaa32da57036d.jpg",
@@ -11,12 +11,12 @@
     "static/media/HotelExterior.png": "/website/static/media/HotelExterior.19f03a2ec75f42b2cd26.png",
     "static/media/HotelBar.png": "/website/static/media/HotelBar.79baa50dbe3781d6187b.png",
     "index.html": "/website/index.html",
-    "main.1b14a3a3.css.map": "/website/static/css/main.1b14a3a3.css.map",
-    "main.3d85406f.js.map": "/website/static/js/main.3d85406f.js.map",
+    "main.2d284d2a.css.map": "/website/static/css/main.2d284d2a.css.map",
+    "main.6160e47d.js.map": "/website/static/js/main.6160e47d.js.map",
     "787.28cb0dcd.chunk.js.map": "/website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1b14a3a3.css",
-    "static/js/main.3d85406f.js"
+    "static/css/main.2d284d2a.css",
+    "static/js/main.6160e47d.js"
   ]
 }
