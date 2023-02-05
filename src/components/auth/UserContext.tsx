@@ -3,8 +3,7 @@ import { FC, createContext, useState, HTMLAttributes, useCallback } from 'react'
 export enum UserType {
   NONE = 0,
   REGULAR = 1,
-  WEDDING_PARTY = 2,
-  DINOSAUR = 3
+  WEDDING_PARTY = 2
 }
 
 interface UserContextState {
@@ -41,9 +40,6 @@ export const UserContextProvider: FC<HTMLAttributes<HTMLDivElement>> = ({ childr
         break;
       case "party":
         userType = UserType.WEDDING_PARTY;
-        break;
-      case "rawr":
-        userType = UserType.DINOSAUR;
         break;
       default:
         userType = UserType.NONE;
