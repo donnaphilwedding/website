@@ -137,8 +137,7 @@ export const Schedule: FC = () => {
             <InfoSubSection title="7:30 - 10:30: Breakfast at Eastgate Hotel"></InfoSubSection>
             <InfoSubSection title="12:00: TBA">
               <p>
-                We're planning a small event on the Sunday before people leave. Possibly booking a cinema screen? We'll
-                update people when we decide.
+                We're planning on doing something on the Sunday, but we're not sure what. We'll let people know when we've decided!
               </p>
             </InfoSubSection>
           </InfoSection>
