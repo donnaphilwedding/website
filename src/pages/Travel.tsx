@@ -15,7 +15,7 @@ export const Travel: FC = () => {
               <a className="underline" href="https://www.theairlineoxford.co.uk/">
                 Oxford Airline
               </a>{' '}
-              is a direct coach service. Buses leave from the central bus station every 30 minutes, and stop opposite
+              is a direct coach service. Buses leave from the central bus station every 30 minutes, and stop by
               the Eastgate Hotel.
             </p>
           </InfoSection>

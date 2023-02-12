@@ -21,7 +21,7 @@ export const Home: FC = () => {
               style={{ backgroundImage: `url(${Break})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}
             ></div>
           </div>
-          <div className="w-full sm:w-5/6 rounded-none sm:rounded-lg bg-primary text-white p-5 text-center flex flex-col gap-5 sm:mb-10">
+          <div className="w-full sm:w-5/6 rounded-none sm:rounded-lg bg-primary text-white px-5 sm:px-16 py-5 text-center flex flex-col gap-5 sm:mb-10">
             <p>We’re excited to be holding our wedding in Oxford in September 2023!</p>
             <p>
               We’ll be organising several events across the weekend, so we can spend as much time as possible with all

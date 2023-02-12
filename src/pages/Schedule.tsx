@@ -94,11 +94,11 @@ export const Schedule: FC = () => {
                 the morning.
               </p>
             </InfoSubSection>
-            <InfoSubSection title={`16:00 - ${weddingParty ? '17:45' : '18:00'}: Drinks at the Eastgate Hotel`}>
+            <InfoSubSection title={`16:00 - ${weddingParty ? '17:30' : '18:00'}: Drinks at the Eastgate Hotel`}>
               <p>While the event is being set up, people can meet in the bar at the Eastgate Hotel.</p>
             </InfoSubSection>
             {weddingParty && (
-              <InfoSubSection title="18:15 - 18:30: Wedding party photos outside museum">
+              <InfoSubSection title="18:00 - 18:30: Wedding party photos outside museum">
                 <p>
                   The wedding party will go to the museum a little bit before everyone else to do a few group photos
                   outside the museum.
