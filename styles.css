@@ -743,7 +743,7 @@ video {
 
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(54 178 156 / var(--tw-bg-opacity));
+  background-color: rgb(106 87 182 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -761,8 +761,8 @@ video {
 }
 
 .from-primary\/25 {
-  --tw-gradient-from: rgb(54 178 156 / 0.25);
-  --tw-gradient-to: rgb(54 178 156 / 0);
+  --tw-gradient-from: rgb(106 87 182 / 0.25);
+  --tw-gradient-to: rgb(106 87 182 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -911,7 +911,7 @@ video {
 body {
   margin: 0;
   font-family: 'Cormorant';
-  color: #1E6457;
+  color: #3E3E3E;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
