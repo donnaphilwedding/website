@@ -10,15 +10,13 @@ import { Login } from './pages/Login';
 import { RequireLogin } from './components/auth/RequireLogin';
 import { UserContextProvider } from './components/auth/UserContext';
 import { Faq } from './pages/Faq';
-import { Loader } from './components/Loader';
 
 export const App: FC = () => {
   return (
     <HashRouter>
       <ScrollToTop />
       <UserContextProvider>
-        <Suspense
-        >
+        <Suspense>
           <Routes>
             <Route element={<RequireLogin />}>
               <Route path="/" element={<Home />} />
