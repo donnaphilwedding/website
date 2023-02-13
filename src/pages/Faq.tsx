@@ -10,7 +10,7 @@ export const Faq: FC = () => {
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="FAQ" className="md:hidden" />
         <div className="flex flex-col items-center gap-5 w-full">
-          <InfoSection title="Events">
+          <InfoSection title="Events" collapsible>
             <Question question="When is the ceremony?">
               <p>We're signing the contract earlier in the week, with just a few close family members.</p>
               <p>
@@ -40,15 +40,9 @@ export const Faq: FC = () => {
                 There's a couple of other small side rooms people can use if they need a quiet area.
               </p>
             </Question>
-            <Question question="Will Jessie be at the wedding?">
-              <p>Jessie will not be there. She's going to be staying at a local boarding kennel for the weekend.</p>
-              <p>
-                As heartbreaking as we find this, we need to remember that Jessie doesn't actually understand what she's
-                missing out on, so won't feel left out.
-              </p>
-            </Question>
+
           </InfoSection>
-          <InfoSection title="Accommodation" secondary>
+          <InfoSection title="Accommodation" secondary collapsible>
             <Question question="How do we book hotel rooms at the Eastgate?">
               <p>Just let Donna or Phil know you want a room and we'll arrange one for you.</p>
             </Question>
@@ -66,7 +60,7 @@ export const Faq: FC = () => {
               <p>We recommend using one of the park and rides, or parking in Forest Hill and getting a taxi.</p>
             </Question>
           </InfoSection>
-          <InfoSection title="Food">
+          <InfoSection title="Food" collapsible>
             <Question question="When will we be eating on Saturday?">
               <p>We are aiming to serve dinner at 19:30 at the museum. There will also be canapes from 18:30.</p>
               <p>
@@ -85,7 +79,7 @@ export const Faq: FC = () => {
               </p>
             </Question>
           </InfoSection>
-          <InfoSection title="Travel" secondary>
+          <InfoSection title="Travel" secondary collapsible>
             <Question question="Where can I park near the museum?">
               <p>
                 The museum itself doesn't have a car park. Their website recommends you park at the Westgate Center, or
@@ -103,6 +97,15 @@ export const Faq: FC = () => {
               <p>
                 If people would prefer to take a taxi, we recommend using Royal Cars (01865 777 333). They also have an
                 Uber-like app where you can pre-book travel.
+              </p>
+            </Question>
+          </InfoSection>
+          <InfoSection title="Jessie" collapsible>
+          <Question question="Will Jessie be at the wedding?">
+              <p>Jessie will not be there. She's going to be staying at a local boarding kennel for the weekend.</p>
+              <p>
+                As heartbreaking as we find this, we need to remember that Jessie doesn't actually understand what she's
+                missing out on, so won't feel left out.
               </p>
             </Question>
           </InfoSection>
