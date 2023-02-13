@@ -113,11 +113,11 @@ export const Faq: FC = () => {
                 className="w-[300px] h-[500px] bg-cover bg-center mx-auto rounded-md"
                 style={{ backgroundImage: `url(${Jessie})` }}
               />
-              <ImageLoader url={Jessie} />
             </Question>
           </InfoSection>
         </div>
       </div>
+      <ImageLoader url={Jessie} />
     </PageContainer>
   );
 };
