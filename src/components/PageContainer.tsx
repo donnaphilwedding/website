@@ -24,7 +24,11 @@ export const PageContainer: FC<PageContainerProps> = ({ children, pageTitle, noH
         </div>
       )}
       <div className={`relative flex-1 overflow-auto`}>
-        <div className="md:max-w-[90%] lg:max-w-4xl mx-auto ">{children}</div>
+        <div className="w-full overflow-x-hidden">
+          <div className="w-screen">
+            <div className="md:max-w-[90%] lg:max-w-4xl mx-auto ">{children}</div>
+          </div>
+        </div>
       </div>
     </div>
   );
