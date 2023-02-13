@@ -12,7 +12,7 @@ export const RecommendationSection: FC<Props> = ({ title, children, className, m
   return (
     <InfoSubSection title={title} className={className}>
       <div>{children}</div>
-      <button className="bg-secondary w-32 text-white border rounded-md p-1 whitespace-nowrap" onClick={() => setShowMap(!showMap)}>
+      <button className="bg-secondary w-full sm:w-32 text-white border rounded-md p-1 whitespace-nowrap" onClick={() => setShowMap(!showMap)}>
         {showMap ? 'Hide map' : 'Show map'}
       </button>
       {showMap && (

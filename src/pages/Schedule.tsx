@@ -1,4 +1,5 @@
 import { FC, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { UserContext, UserType } from '../components/auth/UserContext';
 import { InfoSection } from '../components/InfoSection';
 import { InfoSubSection } from '../components/InfoSubsection';
@@ -55,8 +56,8 @@ export const Schedule: FC = () => {
                   </p>
                   <p>
                     <b>Getting to Forest Hill:</b> There are buses out of the city center, but it's probably easy and
-                    cheaper to take a taxi between four people. Royal Cars (01865 777 333) are usually pretty good, and they have
-                    an app which works a bit like Uber.
+                    cheaper to take a taxi between four people. Royal Cars (01865 777 333) are usually pretty good, and
+                    they have an app which works a bit like Uber.
                   </p>
                 </InfoSubSection>
                 <InfoSubSection title="18:00 - 21:00: Dinner at the Talkhouse">
@@ -95,12 +96,13 @@ export const Schedule: FC = () => {
               </p>
             </InfoSubSection>
             <InfoSubSection title="11:00- 16:00: Free time around Oxford">
+              <p>We haven't planned anything during the day on Saturday, so people should enjoy the city!</p>
               <p>
-                We haven't planned anything during the day on Saturday, so people should enjoy the city!
-              </p>
-              <p>
-                We'll be adding a recommendations section to the website soon with ideas for things to do
-                and our recommendations for places to have lunch.
+                You can find our recommendations for things to do and places to eat{' '}
+                <Link className="underline" to="/recommendations">
+                  here
+                </Link>{' '}
+                .
               </p>
             </InfoSubSection>
             <InfoSubSection title={`16:00 - ${weddingParty ? '17:30' : '18:00'}: Drinks at the Eastgate Hotel`}>
@@ -137,9 +139,9 @@ export const Schedule: FC = () => {
                 night.
               </p>
               <p>
-                <b>Dress code:</b> Smart, but comfy! eg. Shirt and tie for men, cocktail dress for women, but if you don't
-                like wearing ties/dresses/jackets/etc., no worries- feel free to wear something different. Phil will be
-                wearing converses.
+                <b>Dress code:</b> Smart, but comfy! eg. Shirt and tie for men, cocktail dress for women, but if you
+                don't like wearing ties/dresses/jackets/etc., no worries- feel free to wear something different. Phil
+                will be wearing converses.
               </p>
             </div>
           </InfoSection>
@@ -147,7 +149,8 @@ export const Schedule: FC = () => {
             <InfoSubSection title="7:30 - 10:30: Breakfast at Eastgate Hotel"></InfoSubSection>
             <InfoSubSection title="12:00: TBA">
               <p>
-                We're planning on doing something on the Sunday, but we're not sure what. We'll let people know when we've decided!
+                We're planning on doing something on the Sunday, but we're not sure what. We'll let people know when
+                we've decided!
               </p>
             </InfoSubSection>
           </InfoSection>
