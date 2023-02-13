@@ -10,6 +10,7 @@ import { Login } from './pages/Login';
 import { RequireLogin } from './components/auth/RequireLogin';
 import { UserContextProvider } from './components/auth/UserContext';
 import { Faq } from './pages/Faq';
+import { Recommendations } from './pages/Recommendations';
 
 export const App: FC = () => {
   return (
@@ -24,6 +25,7 @@ export const App: FC = () => {
               <Route path="/schedule" element={<Schedule />} />
               <Route path="/accommodation" element={<Accommodation />} />
               <Route path="/faq" element={<Faq />} />
+              <Route path="/recommendations" element={<Recommendations />} />
             </Route>
             <Route path="/login" element={<Login />} />
           </Routes>
