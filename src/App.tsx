@@ -9,6 +9,7 @@ import ScrollToTop from './components/ScrollToTop';
 import { Login } from './pages/Login';
 import { RequireLogin } from './components/auth/RequireLogin';
 import { UserContextProvider } from './components/auth/UserContext';
+import { Faq } from './pages/Faq';
 
 export const App: FC = () => {
   return (
@@ -21,6 +22,7 @@ export const App: FC = () => {
             <Route path="/travel" element={<Travel />} />
             <Route path="/schedule" element={<Schedule />} />
             <Route path="/accommodation" element={<Accommodation />} />
+            <Route path="/faq" element={<Faq />} />
           </Route>
           <Route path="/login" element={<Login />} />
         </Routes>
