@@ -55,7 +55,7 @@ export const Schedule: FC = () => {
                   </p>
                   <p>
                     <b>Getting to Forest Hill:</b> There are buses out of the city center, but it's probably easy and
-                    cheaper to take a taxi between 4. Royal Cars (01865 777 333) are usually pretty good, and they have
+                    cheaper to take a taxi between four people. Royal Cars (01865 777 333) are usually pretty good, and they have
                     an app which works a bit like Uber.
                   </p>
                 </InfoSubSection>
@@ -67,7 +67,7 @@ export const Schedule: FC = () => {
                   </p>
                   <p>
                     <b>Getting back to Oxford:</b> We strongly recommend pre-booking taxis. It's a bit of a pain for the
-                    drivers to come out to where we live, so there's sometimes quite a long wait if you don't pre-book.
+                    drivers to come out to where we live, so there's sometimes quite a wait if you don't pre-book.
                   </p>
                 </InfoSubSection>
               </InfoSection>
@@ -92,6 +92,15 @@ export const Schedule: FC = () => {
               <p>
                 Even if you’re not staying at the hotel, you’re very welcome to come and say hi. We’ll be here most of
                 the morning.
+              </p>
+            </InfoSubSection>
+            <InfoSubSection title="11:00- 16:00: Free time around Oxford">
+              <p>
+                We haven't planned anything during the day on Saturday, so people should enjoy the city!
+              </p>
+              <p>
+                We'll be adding a recommendations section to the website soon with ideas for things to do
+                and our recommendations for places to have lunch.
               </p>
             </InfoSubSection>
             <InfoSubSection title={`16:00 - ${weddingParty ? '17:30' : '18:00'}: Drinks at the Eastgate Hotel`}>
@@ -128,8 +137,9 @@ export const Schedule: FC = () => {
                 night.
               </p>
               <p>
-                <b>Dress code:</b> Comfy smart. If you hate wearing ties/dresses, no worries- feel free to wear
-                something different!
+                <b>Dress code:</b> Smart, but comfy! eg. Shirt and tie for men, cocktail dress for women, but if you don't
+                like wearing ties/dresses/jackets/etc., no worries- feel free to wear something different. Phil will be
+                wearing converses.
               </p>
             </div>
           </InfoSection>
