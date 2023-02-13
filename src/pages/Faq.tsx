@@ -36,11 +36,8 @@ export const Faq: FC = () => {
               </p>
             </Question>
             <Question question="Will there be a quiet area in the museum?">
-              <p>
-                There's a couple of other small side rooms people can use if they need a quiet area.
-              </p>
+              <p>There's a couple of other small side rooms people can use if they need a quiet area.</p>
             </Question>
-
           </InfoSection>
           <InfoSection title="Accommodation" secondary collapsible>
             <Question question="How do we book hotel rooms at the Eastgate?">
@@ -101,7 +98,7 @@ export const Faq: FC = () => {
             </Question>
           </InfoSection>
           <InfoSection title="Jessie" collapsible>
-          <Question question="Will Jessie be at the wedding?">
+            <Question question="Will Jessie be at the wedding?">
               <p>Jessie will not be there. She's going to be staying at a local boarding kennel for the weekend.</p>
               <p>
                 As heartbreaking as we find this, we need to remember that Jessie doesn't actually understand what she's

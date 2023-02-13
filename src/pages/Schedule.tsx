@@ -14,7 +14,7 @@ export const Schedule: FC = () => {
     <PageContainer pageTitle="Schedule">
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="Schedule" className="md:hidden" />
-        <div className="flex flex-col gap-10 md:gap-5">
+        <div className="flex flex-col gap-10 md:gap-5 w-full">
           <InfoSection secondary title="Provisional Schedule">
             <p>This is a work in progress schedule. Times are likely to change!</p>
           </InfoSection>
@@ -31,7 +31,7 @@ export const Schedule: FC = () => {
             </InfoSection>
           ) : (
             <>
-              <InfoSection title="Wednesday 16th September">
+              <InfoSection title="Wednesday 16th September" collapsible>
                 <InfoSubSection title="10:30 - 11:00: The Ceremony">
                   <p>We're holding the ceremony at 10:30 at the registry office in Oxford.</p>
                   <p>
@@ -73,7 +73,7 @@ export const Schedule: FC = () => {
               </InfoSection>
             </>
           )}
-          <InfoSection secondary title="Friday 15th September">
+          <InfoSection secondary title="Friday 15th September" collapsible>
             <InfoSubSection title="15:00 - 17:00: Check in at Eastgate Hotel">
               <p>We’ll be hanging out in the lounge to greet any early arrivals.</p>
             </InfoSubSection>
@@ -87,7 +87,7 @@ export const Schedule: FC = () => {
               </p>
             </InfoSubSection>
           </InfoSection>
-          <InfoSection title="Saturday 16th September">
+          <InfoSection title="Saturday 16th September" collapsible>
             <InfoSubSection title="7:30 - 10:30: Breakfast at the Eastgate Hotel">
               <p>
                 Even if you’re not staying at the hotel, you’re very welcome to come and say hi. We’ll be here most of
@@ -143,7 +143,7 @@ export const Schedule: FC = () => {
               </p>
             </div>
           </InfoSection>
-          <InfoSection secondary title="Sunday 17th September">
+          <InfoSection secondary title="Sunday 17th September" collapsible>
             <InfoSubSection title="7:30 - 10:30: Breakfast at Eastgate Hotel"></InfoSubSection>
             <InfoSubSection title="12:00: TBA">
               <p>

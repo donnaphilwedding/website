@@ -9,7 +9,7 @@ export const Travel: FC = () => {
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="Travel Advice" className="md:hidden" />
         <div className="flex flex-col gap-10 md:gap-5 w-full">
-          <InfoSection title="Arriving from the US">
+          <InfoSection title="Arriving from the US" collapsible>
             <p>
               If you’re coming from Heathrow, the{' '}
               <a className="underline" href="https://www.theairlineoxford.co.uk/">
@@ -19,7 +19,7 @@ export const Travel: FC = () => {
               the Eastgate Hotel.
             </p>
           </InfoSection>
-          <InfoSection secondary title="Arriving from London">
+          <InfoSection secondary title="Arriving from London" collapsible>
             <p>
               If you’re coming from London, we recommend the{' '}
               <a className="underline" href="https://www.oxfordtube.com/">
@@ -29,7 +29,7 @@ export const Travel: FC = () => {
               there's a stop very near the Eastgate.
             </p>
           </InfoSection>
-          <InfoSection title="Arriving by train">
+          <InfoSection title="Arriving by train" collapsible>
             <p>
               The train station is about a mile from the Eastgate Hotel. From the south, trains run directly from London Paddington or
               Marylebone. To get here from the north, you'll probably need to change at Birmingham New Street.
@@ -38,7 +38,7 @@ export const Travel: FC = () => {
               Taxis are available outside the station, or it's a 15 minute walk to the Eastgate Hotel. Due to Oxford's traffic system, it will likely be faster to walk.
             </p>
           </InfoSection>
-          <InfoSection secondary title="Arriving by car">
+          <InfoSection secondary title="Arriving by car" collapsible>
             <p>
               Driving in central Oxford is fairly difficult. The Eastgate Hotel has a very limited amount of parking, which needs to be booked in advance.
             </p>

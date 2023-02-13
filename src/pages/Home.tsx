@@ -3,6 +3,7 @@ import { PageContainer } from '../components/PageContainer';
 import Break from '../images/break.svg';
 import AlexWedding from '../images/AlexWedding.jpg';
 import { Link } from 'react-router-dom';
+import { ImageLoader } from '../components/ImageLoader';
 
 export const Home: FC = () => {
   return (
@@ -39,6 +40,8 @@ export const Home: FC = () => {
             className="w-full sm:w-5/6 h-[30vh] sm:h-[50vh] rounded-none sm:rounded-lg bg-cover bg-center sm:bg-bottom"
             style={{ backgroundImage: `url(${AlexWedding})` }}
           />
+          <ImageLoader url={AlexWedding} />
+          <ImageLoader url={Break} />
         </div>
       </PageContainer>
     </div>

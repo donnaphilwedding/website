@@ -5,6 +5,7 @@ import { PageTitleCard } from '../components/PageTitleCard';
 import HotelBar from '../images/HotelBar.png';
 import HotelLounge from '../images/HotelLounge.png';
 import HotelExterior from '../images/HotelExterior.png';
+import { ImageLoader } from '../components/ImageLoader';
 
 export const Accommodation: FC = () => {
   return (
@@ -36,13 +37,17 @@ export const Accommodation: FC = () => {
               you RSVP!
             </p>
             <p>
-              We'll need to finalise the booking by July 1st. Rooms may be available after this, but not at the discounted rate.
+              We'll need to finalise the booking by July 1st. Rooms may be available after this, but not at the
+              discounted rate.
             </p>
           </InfoSection>
           <div
-              className="w-full h-[50vh] sm:h-[70vh] rounded-none sm:rounded-lg bg-cover bg-center"
-              style={{ backgroundImage: `url(${HotelExterior})` }}
-            />
+            className="w-full h-[50vh] sm:h-[70vh] rounded-none sm:rounded-lg bg-cover bg-center"
+            style={{ backgroundImage: `url(${HotelExterior})` }}
+          />
+          <ImageLoader url={HotelExterior} />
+          <ImageLoader url={HotelLounge} />
+          <ImageLoader url={HotelBar} />
         </div>
       </div>
     </PageContainer>
