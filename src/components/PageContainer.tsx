@@ -9,7 +9,7 @@ interface PageContainerProps extends HTMLAttributes<HTMLDivElement> {
 
 export const PageContainer: FC<PageContainerProps> = ({ children, pageTitle, noHeader }) => {
   return (
-    <div className="bg-background">
+    <div className="bg-background h-screen w-screen flex flex-col">
       <div
         className="fixed w-full h-[100vh] bg-cover bg-bottom top-0"
         style={{
@@ -19,11 +19,11 @@ export const PageContainer: FC<PageContainerProps> = ({ children, pageTitle, noH
       />
       <div className="fixed w-full h-[100vh] bg-gradient-to-b from-primary/25 to-background top-0" />
       {!noHeader && (
-        <div className="fixed w-full top-0 z-50">
+        <div className="w-full z-50">
           <Header title={pageTitle} />
         </div>
       )}
-      <div className={`relative ${noHeader ? '' : 'pt-10 md:pt-16'}`}>
+      <div className={`relative flex-1 overflow-auto`}>
         <div className="md:max-w-[90%] lg:max-w-4xl mx-auto ">{children}</div>
       </div>
     </div>
