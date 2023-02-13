@@ -1,8 +1,10 @@
 import { FC } from 'react';
+import { ImageLoader } from '../components/ImageLoader';
 import { InfoSection } from '../components/InfoSection';
 import { PageContainer } from '../components/PageContainer';
 import { PageTitleCard } from '../components/PageTitleCard';
 import { Question } from '../components/Question';
+import Jessie from '../images/Jessie.jpg';
 
 export const Faq: FC = () => {
   return (
@@ -104,6 +106,14 @@ export const Faq: FC = () => {
                 As heartbreaking as we find this, we need to remember that Jessie doesn't actually understand what she's
                 missing out on, so won't feel left out.
               </p>
+            </Question>
+            <Question question="Who's a good dog?">
+              <p>Jessie is a good dog.</p>
+              <div
+                className="w-[300px] h-[500px] bg-cover bg-center mx-auto rounded-md"
+                style={{ backgroundImage: `url(${Jessie})` }}
+              />
+              <ImageLoader url={Jessie} />
             </Question>
           </InfoSection>
         </div>
