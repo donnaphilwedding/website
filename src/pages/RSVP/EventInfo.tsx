@@ -42,7 +42,7 @@ export const EventInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
       />
       <TextAreaInput
         name="Are you planning on bringing any children to the wedding?"
-        description="Please include their names"
+        description="Please include their names and ages."
         value={responses.children}
         onChange={setChildren}
       />

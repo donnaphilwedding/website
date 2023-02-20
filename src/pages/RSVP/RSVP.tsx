@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { Button } from '../../components/Button';
 import { InfoSection } from '../../components/InfoSection';
 import { PageContainer } from '../../components/PageContainer';
 import { PageTitleCard } from '../../components/PageTitleCard';
@@ -32,6 +33,11 @@ export const RSVP: FC = () => {
     }
   };
 
+  const reset = () => {
+    setPage(RsvpPage.GUEST);
+    setResponse({ name: '' });
+  };
+
   return (
     <PageContainer pageTitle="RSVP">
       <div className="flex flex-col items-center gap-5 py-10">
@@ -45,7 +51,12 @@ export const RSVP: FC = () => {
         {page === RsvpPage.FOOD && (
           <FoodInfo responses={response} setResponses={setResponse} onComplete={onNext} onBack={onBack} />
         )}
-        {page === RsvpPage.COMPLETE && <InfoSection>Done!</InfoSection>}
+        {page === RsvpPage.COMPLETE && (
+          <InfoSection>
+            <div>Your RSVP has been submitted!</div>
+            <Button className="w-72" onClick={reset}>RSVP for another person</Button>
+          </InfoSection>
+        )}
       </div>
     </PageContainer>
   );

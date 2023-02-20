@@ -8,7 +8,7 @@ interface Props {
 
 export const Button: FC<Props> = ({ className, onClick, children }) => {
   return (
-    <button className="bg-primary text-white rounded-md w-40 p-1" onClick={onClick}>
+    <button className="bg-primary text-white rounded-md p-1 px-5" onClick={onClick}>
       {children}
     </button>
   );
