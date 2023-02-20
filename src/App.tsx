@@ -12,7 +12,7 @@ import { UserContextProvider } from './components/auth/UserContext';
 import { Faq } from './pages/Faq';
 import { Recommendations } from './pages/Recommendations';
 import { RequireDev } from './components/auth/RequireDev';
-import { RSVP } from './pages/RSVP';
+import { RSVP } from './pages/RSVP/RSVP';
 
 export const App: FC = () => {
   return (
