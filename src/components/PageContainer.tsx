@@ -30,7 +30,7 @@ export const PageContainer: FC<PageContainerProps> = ({ children, pageTitle, noH
         <div className="w-full overflow-x-hidden">
           <div className="w-screen">
             <div className="md:max-w-[90%] lg:max-w-4xl mx-auto ">
-              <Suspense fallback={<div className="h-40 flex items-center justify-center"><Loader className="h-10 w-10" /></div>}>{children}</Suspense>
+              <Suspense fallback={<div className="h-40 flex items-center justify-center"><Loader className="h-16 w-16 text-white" /></div>}>{children}</Suspense>
             </div>
           </div>
         </div>
