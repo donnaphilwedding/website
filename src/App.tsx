@@ -11,7 +11,6 @@ import { RequireLogin } from './components/auth/RequireLogin';
 import { UserContextProvider } from './components/auth/UserContext';
 import { Faq } from './pages/Faq';
 import { Recommendations } from './pages/Recommendations';
-import { RequireDev } from './components/auth/RequireDev';
 import { RSVP } from './pages/RSVP/RSVP';
 
 export const App: FC = () => {
@@ -28,8 +27,6 @@ export const App: FC = () => {
               <Route path="/accommodation" element={<Accommodation />} />
               <Route path="/faq" element={<Faq />} />
               <Route path="/recommendations" element={<Recommendations />} />
-            </Route>
-            <Route element={<RequireDev />}>
               <Route path="/rsvp" element={<RSVP />} />
             </Route>
             <Route path="/login" element={<Login />} />
