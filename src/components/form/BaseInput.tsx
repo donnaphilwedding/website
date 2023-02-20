@@ -16,6 +16,7 @@ export const BaseInput: FC<BaseInputProps> = ({
       {name && <div className="text-lg font-semibold">{name}</div>}
       {description && <div className="mb-2">{description}</div>}
       {children}
+      {errorMessage && <div className="text-red-500">{errorMessage}</div>}
     </div>
   );
 };
