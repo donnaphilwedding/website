@@ -1,4 +1,4 @@
-import { FoodChoice, Responses } from "./rsvp.types";
+import { EventDay, FoodChoice, Responses } from './rsvp.types';
 
 export const foodChoiceToFormResponse = (choice: FoodChoice) => {
   switch (choice) {
@@ -24,15 +24,15 @@ export const buildResponseLink = (responses: Responses) => {
     link += `&entry.1732408748=Yes`;
   }
 
-  if (responses.events?.friday) {
+  if (responses.events?.includes(EventDay.FRIDAY)) {
     link += `&entry.2094926627=Friday`;
   }
 
-  if (responses.events?.saturday) {
+  if (responses.events?.includes(EventDay.SATURDAY)) {
     link += `&entry.2094926627=Saturday`;
   }
 
-  if (responses.events?.sunday) {
+  if (responses.events?.includes(EventDay.SUNDAY)) {
     link += `&entry.2094926627=Sunday`;
   }
 
@@ -40,12 +40,18 @@ export const buildResponseLink = (responses: Responses) => {
     link += `&entry.1200732236=${responses.dietaryRequirements}`;
   }
 
-  if (responses.foodChoices) {
-    link += `&entry.1606828388=${foodChoiceToFormResponse(responses.foodChoices.beef)}`;
-    link += `&entry.326445905=${foodChoiceToFormResponse(responses.foodChoices.chicken)}`;
-    link += `&entry.233524952=${foodChoiceToFormResponse(responses.foodChoices.veggie)}`;
-    if (responses.foodChoices.potatoes) {
-      link += `&entry.803370769=${responses.foodChoices.potatoes}`;
+  if (responses.beef) {
+    link += `&entry.1606828388=${foodChoiceToFormResponse(responses.beef)}`;
+  }
+  if (responses.chicken) {
+    link += `&entry.326445905=${foodChoiceToFormResponse(responses.chicken)}`;
+  }
+  if (responses.veggie) {
+    link += `&entry.233524952=${foodChoiceToFormResponse(responses.veggie)}`;
+  }
+  if (responses.beef) {
+    if (responses.potatoes) {
+      link += `&entry.803370769=${responses.potatoes}`;
     }
   }
 

@@ -1,47 +1,51 @@
 import { FC, useState } from 'react';
+import { InfoSection } from '../../components/InfoSection';
 import { PageContainer } from '../../components/PageContainer';
 import { PageTitleCard } from '../../components/PageTitleCard';
-import { FoodChoice, Responses } from '../../utils/rsvp.types';
+import { Responses } from '../../utils/rsvp.types';
 import { submitRsvp } from '../../utils/submitResponse';
 import { BasicInfo } from './BasicInfo';
 import { EventInfo } from './EventInfo';
 import { FoodInfo } from './FoodInfo';
 
+enum RsvpPage {
+  GUEST,
+  EVENT,
+  FOOD,
+  COMPLETE
+}
+
 export const RSVP: FC = () => {
-  const [response, setResponse] = useState<Responses>({});
+  const [response, setResponse] = useState<Responses>({ name: '' });
+  const [page, setPage] = useState<RsvpPage>(RsvpPage.GUEST);
 
-  const submit = () => {
-    const testResponses: Responses = {
-      name: response.name,
-      attending: response.attending,
-      foodChoices: {
-        beef: FoodChoice.BAD,
-        chicken: FoodChoice.OKAY,
-        veggie: FoodChoice.GOOD,
-        potatoes: 5
-      },
-      children: 'No children',
-      dietaryRequirements: 'No dietary requirements',
-      events: {
-        friday: true,
-        saturday: true,
-        sunday: false
-      }
-    };
-
-    submitRsvp(testResponses);
+  const onBack = () => {
+    setPage(page - 1);
   };
 
-  const [showEventsStep, setShowEventsStep] = useState<boolean>(false);
-  const [showFoodStep, setShowFoodStep] = useState<boolean>(false);
+  const onNext = () => {
+    if (!response.attending || page === RsvpPage.COMPLETE - 1) {
+      setPage(RsvpPage.COMPLETE);
+      submitRsvp(response);
+    } else {
+      setPage(page + 1);
+    }
+  };
 
   return (
     <PageContainer pageTitle="RSVP">
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="RSVP" className="md:hidden" />
-        <BasicInfo responses={response} setResponses={setResponse} cardComplete={() => setShowEventsStep(true)} open={true} />
-        <EventInfo responses={response} setResponses={setResponse} cardComplete={() => setShowFoodStep(true)} open={showEventsStep} />
-        <FoodInfo responses={response} setResponses={setResponse} cardComplete={submit} open={showFoodStep} />
+        {page === RsvpPage.GUEST && (
+          <BasicInfo responses={response} setResponses={setResponse} onComplete={onNext} onBack={onBack} />
+        )}
+        {page === RsvpPage.EVENT && (
+          <EventInfo responses={response} setResponses={setResponse} onComplete={onNext} onBack={onBack} />
+        )}
+        {page === RsvpPage.FOOD && (
+          <FoodInfo responses={response} setResponses={setResponse} onComplete={onNext} onBack={onBack} />
+        )}
+        {page === RsvpPage.COMPLETE && <InfoSection>Done!</InfoSection>}
       </div>
     </PageContainer>
   );

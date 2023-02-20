@@ -1,28 +1,26 @@
 import { FC } from 'react';
-import { merge } from '../../utils/merge';
 import { BaseInput } from './BaseInput';
-import { InputProps } from './form.types';
-
-export interface Choice<T> {
-  label: string;
-  value: T;
-}
+import { Choice, InputProps } from './form.types';
+import { RadioButton } from './RadioButton';
 
 interface Props<T> extends InputProps<T> {
   choices: Choice<T>[];
+  grid?: boolean;
 }
 
-export const ChoiceInput: FC<Props<number>> = ({
-  value,
-  onChange,
-  choices,
-  ...props
-}) => {
+export const ChoiceInput: FC<Props<any>> = ({ value, onChange, choices, grid, ...props }) => {
   return (
     <BaseInput {...props}>
-      {choices.map(choice => (
-        <input type="radio" checked={value === choice.value} />
-      ))}
+      <div className={`grid grid-cols-1 ${grid ? 'sm:grid-cols-3' : ''}`}>
+        {choices.map(choice => (
+          <RadioButton
+            label={choice.label}
+            onClick={() => onChange(choice.value)}
+            checked={value === choice.value}
+            key={choice.label}
+          />
+        ))}
+      </div>
     </BaseInput>
   );
 };

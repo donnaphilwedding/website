@@ -14,3 +14,8 @@ export interface InputProps<T> extends Exclude<BaseInputProps, 'children'> {
   placeholder?: string;
   className?: string;
 }
+
+export interface Choice<T> {
+  label: string;
+  value: T;
+}

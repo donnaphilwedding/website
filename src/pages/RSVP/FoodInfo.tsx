@@ -1,56 +1,128 @@
-import { FC, useState } from 'react';
-import { BooleanInput } from '../../components/form/BooleanInput';
-import { TextInput } from '../../components/form/TextInput';
+import { FC } from 'react';
+import { Button } from '../../components/Button';
+import { ChoiceInput } from '../../components/form/ChoiceInput';
+import { Choice } from '../../components/form/form.types';
+import { TextAreaInput } from '../../components/form/TextAreaInput';
 import { InfoSection } from '../../components/InfoSection';
+import { InfoSubSection } from '../../components/InfoSubsection';
+import { FoodChoice } from '../../utils/rsvp.types';
 import { FormCardProps } from './rsvpForm.types';
 
-export const FoodInfo: FC<FormCardProps> = ({ responses, setResponses, cardComplete, open }) => {
-  const setName = (name: string) => {
-    setNameError("");
-    setResponses({ ...responses, name });
-  };
-
-  const setAttending = (attending: boolean) => {
-    setAttendingError("");
-    setResponses({ ...responses, attending });
-  };
-
-  const [nameError, setNameError] = useState<string>("");
-  const [attendingError, setAttendingError] = useState<string>("");
-
-  const validateAndComplete = () => {
-    if (!responses.name) {
-      setNameError("You must provide at least one name.")
-    }
-
-    if (responses.attending === undefined) {
-      setAttendingError("You must say whether you are able to attend.")
-    }
-
-    if (responses.name && responses.attending !== undefined) {
-      cardComplete();
-    }
+const foodChoices: Choice<FoodChoice>[] = [
+  {
+    label: 'No interest',
+    value: FoodChoice.BAD
+  },
+  {
+    label: 'Would be interested to try',
+    value: FoodChoice.OKAY
+  },
+  {
+    label: 'Would be my first choice',
+    value: FoodChoice.GOOD
   }
+];
+
+const potatoChoices: Choice<number>[] = [
+  {
+    label: 'Strongly prefer dauphinois',
+    value: 1
+  },
+  {
+    label: 'Slighty prefer dauphinois',
+    value: 3
+  },
+  {
+    label: "That's a difficult question to answer",
+    value: 5
+  },
+  {
+    label: 'Slightly prefer roast',
+    value: 7
+  },
+  {
+    label: 'Strongly prefer roast',
+    value: 9
+  },
+  {
+    label: 'Why are you asking me about potatoes?',
+    value: 0
+  }
+];
+
+export const FoodInfo: FC<FormCardProps> = ({ responses, setResponses, onComplete, onBack }) => {
+  const setDiet = (diet: string) => {
+    setResponses({ ...responses, dietaryRequirements: diet });
+  };
+
+  const setBeef = (beef: FoodChoice) => {
+    setResponses({ ...responses, beef });
+  };
+
+  const setChicken = (chicken: FoodChoice) => {
+    setResponses({ ...responses, chicken });
+  };
+
+  const setVeggie = (veggie: FoodChoice) => {
+    setResponses({ ...responses, veggie });
+  };
+
+  const setPotatoes = (potatoes: number) => {
+    setResponses({ ...responses, potatoes });
+  };
 
   return (
-        <InfoSection title="Food Choices" collapsible forceOpen={open}>
-          <TextInput
-            name="Name of Guest"
-            className="w-full"
-            value={responses.name}
-            onChange={setName}
-            description="We'll use this as a reference for the seating plan, so please include surnames!"
-            errorMessage={nameError}
-          />
-          <BooleanInput
-            name="Are you able to attend the wedding?"
-            value={responses.attending}
-            onChange={setAttending}
-            errorMessage={attendingError}
-          />
-          <button className="bg-primary text-white rounded-md w-40 p-1" onClick={validateAndComplete}>
-            Submit response
-          </button>
-        </InfoSection>
+    <InfoSection title="Food Choices">
+      <TextAreaInput
+        name="Do you have any strict dietary requirements?"
+        description="eg. allergies and intolerances, religious restrictions, etc."
+        value={responses.dietaryRequirements}
+        onChange={setDiet}
+      />
+      <InfoSubSection title="Saturday Evening Meal">
+        <div>
+          For the Saturday evening, we're planning a buffet style meal. People will get to try a few different things,
+          and there should be something for everyone.
+        </div>
+        <div>
+          We'd like to get people's thoughts on what appeals most to them, to make sure we order the right amounts.
+        </div>
+        <div>
+          How would you feel about the following main course dishes? There will also be a selection of side dishes, and
+          canapes earlier in the evening.
+        </div>
+        <ChoiceInput
+          name="Roast Beef with Yorkshire Puddings"
+          choices={foodChoices}
+          value={responses.beef}
+          onChange={setBeef}
+          grid
+        />
+        <ChoiceInput
+          name="Chicken Supreme"
+          choices={foodChoices}
+          value={responses.chicken}
+          onChange={setChicken}
+          grid
+        />
+        <ChoiceInput
+          name="Vegan Lentil and Beetroot Wellington"
+          choices={foodChoices}
+          value={responses.veggie}
+          onChange={setVeggie}
+          grid
+        />
+        <ChoiceInput
+          name="Help us decide which potatoes to get! Roast or dauphinois?"
+          choices={potatoChoices}
+          value={responses.potatoes}
+          onChange={setPotatoes}
+        />
+      </InfoSubSection>
+      <div className="flex justify-between">
+        <Button onClick={onBack}>Back</Button>
+        <Button onClick={onComplete}>Submit</Button>
+      </div>
+    </InfoSection>
   );
 };

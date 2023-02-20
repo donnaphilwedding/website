@@ -6,10 +6,10 @@ interface Props {
   checked: boolean;
 }
 
-export const RadioButton: FC<Props> = ({ label, checked, onClick }) => {
+export const Checkbox: FC<Props> = ({ label, checked, onClick }) => {
   return (
     <div className="flex gap-2 items-center">
-      <input type="radio" checked={checked} onChange={onClick} />
+      <input type="checkbox" checked={checked} onChange={onClick} />
       <div>{label}</div>
     </div>
   );

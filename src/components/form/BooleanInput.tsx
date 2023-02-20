@@ -11,3 +11,4 @@ export const BooleanInput: FC<InputProps<boolean>> = ({ value, onChange, ...prop
     </BaseInput>
   );
 };
+
