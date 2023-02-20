@@ -1,4 +1,5 @@
 import { FC, createContext, useState, HTMLAttributes, useCallback } from 'react';
+import { useKonami } from 'react-konami-code';
 
 export enum UserType {
   NONE = 0,
@@ -55,6 +56,11 @@ export const UserContextProvider: FC<HTMLAttributes<HTMLDivElement>> = ({ childr
 
     return userType;
   }, [setUser]);
+
+  useKonami(() => {
+    alert("Logging in as developer account. Refresh to see additional pages.");
+    userLogin('dev');
+  });
 
   const userLogout = useCallback(() => {
     setUser(UserType.NONE);
