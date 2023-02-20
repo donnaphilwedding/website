@@ -20,7 +20,7 @@ export const InfoSection: FC<InfoSectionProps> = ({ title, secondary, children, 
 
   return (
     <div className={cardClass} onClick={collapsed ? () => setCollapsed(false) : undefined}>
-      <p className="font-cormorantSc text-2xl text-center mb-2">{title}</p>
+      {title && <p className="font-cormorantSc text-2xl text-center mb-2">{title}</p>}
       {!collapsed && <div className={merge('flex flex-col gap-5', className)}>{children}</div>}
       {collapsible && (
         <button type="button" className='absolute top-4 right-4' onClick={() => setCollapsed(!collapsed)}>

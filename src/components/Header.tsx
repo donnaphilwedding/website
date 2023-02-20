@@ -1,7 +1,8 @@
-import { FC, useState } from 'react';
+import { FC, useContext, useState } from 'react';
 import { NavigationDrawer } from './NavigationDrawer';
 import { FiMenu } from 'react-icons/fi';
 import { ReactComponent as Break } from '../images/breakWhite.svg';
+import { UserContext, UserType } from './auth/UserContext';
 
 export interface NavigationPage {
   name: string;
@@ -14,6 +15,7 @@ interface HeaderProps {
 
 export const Header: FC<HeaderProps> = ({ title }) => {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
+  const { user } = useContext(UserContext);
 
   const pages: NavigationPage[] = [
     {
@@ -41,6 +43,13 @@ export const Header: FC<HeaderProps> = ({ title }) => {
       link: '/recommendations'
     }
   ];
+
+  if (user === UserType.DEV) {
+    pages.push({
+      name: 'RSVP',
+      link: '/rsvp'
+    })
+  }
 
   return (
     <div>

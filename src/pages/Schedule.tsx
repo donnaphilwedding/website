@@ -9,7 +9,7 @@ import { PageTitleCard } from '../components/PageTitleCard';
 export const Schedule: FC = () => {
   const { user } = useContext(UserContext);
 
-  const weddingParty = user === UserType.WEDDING_PARTY;
+  const weddingParty = user >= UserType.WEDDING_PARTY;
 
   return (
     <PageContainer pageTitle="Schedule">
