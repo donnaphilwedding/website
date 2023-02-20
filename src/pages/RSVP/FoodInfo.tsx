@@ -4,7 +4,7 @@ import { TextInput } from '../../components/form/TextInput';
 import { InfoSection } from '../../components/InfoSection';
 import { FormCardProps } from './rsvpForm.types';
 
-export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, cardComplete, open }) => {
+export const FoodInfo: FC<FormCardProps> = ({ responses, setResponses, cardComplete, open }) => {
   const setName = (name: string) => {
     setNameError("");
     setResponses({ ...responses, name });
@@ -33,7 +33,7 @@ export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, cardComp
   }
 
   return (
-        <InfoSection title="Guest Details" collapsible forceOpen={open}>
+        <InfoSection title="Food Choices" collapsible forceOpen={open}>
           <TextInput
             name="Name of Guest"
             className="w-full"
@@ -49,7 +49,7 @@ export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, cardComp
             errorMessage={attendingError}
           />
           <button className="bg-primary text-white rounded-md w-40 p-1" onClick={validateAndComplete}>
-            {responses.attending === false ? "Submit response" : "Next"}
+            Submit response
           </button>
         </InfoSection>
   );

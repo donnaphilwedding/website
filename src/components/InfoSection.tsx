@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes, useState } from 'react';
+import { FC, HTMLAttributes, useEffect, useState } from 'react';
 import { merge } from '../utils/merge';
 import { HiOutlineChevronDown, HiOutlineChevronRight } from 'react-icons/hi';
 
@@ -6,10 +6,17 @@ interface InfoSectionProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;
   secondary?: boolean;
   collapsible?: boolean;
+  forceOpen?: boolean;
 }
 
-export const InfoSection: FC<InfoSectionProps> = ({ title, secondary, children, className, collapsible = false }) => {
-  const [collapsed, setCollapsed] = useState<boolean>(collapsible);
+export const InfoSection: FC<InfoSectionProps> = ({ title, secondary, children, className, collapsible = false, forceOpen = false }) => {
+  const [collapsed, setCollapsed] = useState<boolean>(collapsible && !forceOpen);
+
+  useEffect(() => {
+    if (forceOpen) {
+      setCollapsed(false);
+    }
+  }, [setCollapsed, forceOpen]);
 
   let cardClass = 'md:rounded-lg w-full py-3 px-3 md:px-5 relative';
   if (secondary) {
