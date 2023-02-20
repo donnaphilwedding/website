@@ -5,8 +5,8 @@ export enum FoodChoice {
 }
 
 export interface Responses {
-  name: string;
-  attending: boolean;
+  name?: string;
+  attending?: boolean;
   events?: {
     friday: boolean;
     saturday: boolean;
