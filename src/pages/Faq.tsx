@@ -40,6 +40,12 @@ export const Faq: FC = () => {
             <Question question="Will there be a quiet area in the museum?">
               <p>There's a couple of other small side rooms people can use if they need a quiet area.</p>
             </Question>
+            <Question question="Can I bring my partner?">
+              <p>
+                Of course! We'll need to know by early August if you're bringing someone, because we'll need to
+                sort out the seating plan and the food order. No worries if they weren't named on the invite.
+              </p>
+            </Question>
           </InfoSection>
           <InfoSection title="Accommodation" secondary collapsible>
             <Question question="How do we book hotel rooms at the Eastgate?">

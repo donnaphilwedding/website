@@ -27,10 +27,6 @@ export const EventInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
     setResponses({ ...responses, events });
   };
 
-  const setChildren = (children: string) => {
-    setResponses({ ...responses, children });
-  };
-
   return (
     <InfoSection title="Event Details">
       <CheckboxListInput
@@ -39,12 +35,6 @@ export const EventInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
         value={responses.events}
         onChange={setEvents}
         choices={checkboxChoices}
-      />
-      <TextAreaInput
-        name="Are you planning on bringing any children to the wedding?"
-        description="Please include their names and ages."
-        value={responses.children}
-        onChange={setChildren}
       />
       <div className="flex justify-between">
         <Button onClick={onBack}>Back</Button>

@@ -16,6 +16,10 @@ export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
     setResponses({ ...responses, attending });
   };
 
+  const setChildren = (children: string) => {
+    setResponses({ ...responses, children });
+  };
+
   const [nameError, setNameError] = useState<string>('');
   const [attendingError, setAttendingError] = useState<string>('');
 
@@ -36,16 +40,23 @@ export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
   return (
     <InfoSection title="Guest Details">
       <div>
-        Note: The online RSVP is currently being developed. If you reply now, there's a chance you'll need to do it
-        again if the page isn't working properly.
+        <b>Note: </b>The online RSVP is currently being developed. Please let Phil know after you've submitted, so he
+        can check it went through!
       </div>
       <TextInput
-        name="Name of Guest"
+        name="Name of guest(s)"
         className="w-full"
         value={responses.name}
         onChange={setName}
-        description="We'll use this as a reference for the seating plan, so please include surnames!"
+        description="You can also include your partner's name, but you'll only be able to enter one set of food choices. We'll use this as a reference for the seating plan, so please include surnames."
         errorMessage={nameError}
+      />
+      <TextInput
+        name="Are you planning on bringing any children to the wedding?"
+        description="Please include their names and ages."
+        className="w-full"
+        value={responses.children}
+        onChange={setChildren}
       />
       <BooleanInput
         name="Are you able to attend the wedding?"
