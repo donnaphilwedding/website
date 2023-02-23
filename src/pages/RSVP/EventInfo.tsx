@@ -3,7 +3,7 @@ import { Button } from '../../components/Button';
 import { CheckboxListInput } from '../../components/form/CheckboxListInput';
 import { Choice } from '../../components/form/form.types';
 import { TextAreaInput } from '../../components/form/TextAreaInput';
-import { Card } from '../../components/Card';
+import { Card } from '../../components/card/Card';
 import { EventDay } from '../../utils/rsvp.types';
 import { FormCardProps } from './rsvpForm.types';
 

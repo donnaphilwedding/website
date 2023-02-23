@@ -1,6 +1,6 @@
 import { FC, useContext } from 'react';
 import { Outlet } from 'react-router-dom';
-import { Card } from '../Card';
+import { Card } from '../card/Card';
 import { PageContainer } from '../PageContainer';
 import { PageTitleCard } from '../PageTitleCard';
 import { UserContext, UserType } from './UserContext';

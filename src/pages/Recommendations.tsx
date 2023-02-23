@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { Card } from '../components/Card';
+import { Card } from '../components/card/Card';
 import { PageContainer } from '../components/PageContainer';
 import { PageTitleCard } from '../components/PageTitleCard';
 import { RecommendationSection } from '../components/RecommendationSection';

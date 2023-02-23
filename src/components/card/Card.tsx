@@ -1,5 +1,5 @@
 import { FC, HTMLAttributes, useEffect, useState } from 'react';
-import { merge } from '../utils/merge';
+import { merge } from '../../utils/merge';
 import { HiOutlineChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
 

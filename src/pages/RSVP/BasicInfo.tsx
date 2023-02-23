@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import { Button } from '../../components/Button';
 import { BooleanInput } from '../../components/form/BooleanInput';
 import { TextInput } from '../../components/form/TextInput';
-import { Card } from '../../components/Card';
+import { Card } from '../../components/card/Card';
 import { FormCardProps } from './rsvpForm.types';
 
 export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, onComplete, onBack }) => {

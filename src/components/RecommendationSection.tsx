@@ -1,5 +1,5 @@
 import { FC, HTMLAttributes, useState } from 'react';
-import { InfoSubSection } from './InfoSubsection';
+import { CardSection } from './card/CardSection';
 
 interface Props extends HTMLAttributes<HTMLDivElement> {
   title: string;
@@ -10,7 +10,7 @@ export const RecommendationSection: FC<Props> = ({ title, children, className, m
   const [showMap, setShowMap] = useState<boolean>(false);
 
   return (
-    <InfoSubSection title={title} className={className}>
+    <CardSection title={title} className={className}>
       <div>{children}</div>
       <button className="bg-secondary w-full sm:w-32 text-white border rounded-md p-1 whitespace-nowrap" onClick={() => setShowMap(!showMap)}>
         {showMap ? 'Hide map' : 'Show map'}
@@ -26,6 +26,6 @@ export const RecommendationSection: FC<Props> = ({ title, children, className, m
           referrerPolicy="no-referrer-when-downgrade"
         ></iframe>
       )}
-    </InfoSubSection>
+    </CardSection>
   );
 };

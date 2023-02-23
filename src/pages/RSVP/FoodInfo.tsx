@@ -3,8 +3,8 @@ import { Button } from '../../components/Button';
 import { ChoiceInput } from '../../components/form/ChoiceInput';
 import { Choice } from '../../components/form/form.types';
 import { TextAreaInput } from '../../components/form/TextAreaInput';
-import { Card } from '../../components/Card';
-import { InfoSubSection } from '../../components/InfoSubsection';
+import { Card } from '../../components/card/Card';
+import { CardSection } from '../../components/card/CardSection';
 import { FoodChoice } from '../../utils/rsvp.types';
 import { FormCardProps } from './rsvpForm.types';
 
@@ -79,7 +79,7 @@ export const FoodInfo: FC<FormCardProps> = ({ responses, setResponses, onComplet
         value={responses.dietaryRequirements}
         onChange={setDiet}
       />
-      <InfoSubSection title="Saturday Evening Meal">
+      <CardSection title="Saturday Evening Meal">
         <div>
           For the Saturday evening, we're planning a buffet style meal. People will get to try a few different things,
           and there should be something for everyone.
@@ -118,7 +118,7 @@ export const FoodInfo: FC<FormCardProps> = ({ responses, setResponses, onComplet
           value={responses.potatoes}
           onChange={setPotatoes}
         />
-      </InfoSubSection>
+      </CardSection>
       <div className="flex justify-between">
         <Button onClick={onBack}>Back</Button>
         <Button onClick={onComplete}>Submit</Button>

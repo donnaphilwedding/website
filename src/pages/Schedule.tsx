@@ -2,8 +2,9 @@ import { motion } from 'framer-motion';
 import { FC, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext, UserType } from '../components/auth/UserContext';
-import { Card } from '../components/Card';
-import { InfoSubSection } from '../components/InfoSubsection';
+import { Card } from '../components/card/Card';
+import { CardContent } from '../components/card/CardContent';
+import { CardSection } from '../components/card/CardSection';
 import { PageContainer } from '../components/PageContainer';
 import { PageTitleCard } from '../components/PageTitleCard';
 
@@ -22,34 +23,34 @@ export const Schedule: FC = () => {
           </Card>
           {!weddingParty ? (
             <Card title="The Week Before">
-              <p>
+              <CardContent>
                 During the week before the wedding, we’ll be holding a low key ceremony with just close friends and
                 family.
-              </p>
-              <p>
+              </CardContent>
+              <CardContent>
                 We’re choosing not to hold it on the main weekend to keep our plans on the Saturday as simple as
                 possible- meaning we get to spend more time with people!
-              </p>
+              </CardContent>
             </Card>
           ) : (
             <>
               <Card title="Wednesday 16th September" collapsible>
-                <InfoSubSection title="10:30 - 11:00: The Ceremony">
-                  <p>We're holding the ceremony at 10:30 at the registry office in Oxford.</p>
-                  <p>
+                <CardSection title="10:30 - 11:00: The Ceremony">
+                  <CardContent>We're holding the ceremony at 10:30 at the registry office in Oxford.</CardContent>
+                  <CardContent>
                     The room we're using can only accommodate 23 people. We're hoping to include as many people as
                     possible, but we can't promise to fit absolutely everyone. Let us know beforehand if you want to be
                     present at the ceremony, and we'll try our best to make sure you're included!
-                  </p>
-                  <p>
+                  </CardContent>
+                  <CardContent>
                     We're not planning to do anything special for the ceremony. We'll just be signing the contract, with
                     no readings or personal vows, and we'll wait until later on to do any group photos.
-                  </p>
-                  <p>
+                  </CardContent>
+                  <CardContent>
                     <b>Dress code:</b> Casual
-                  </p>
-                </InfoSubSection>
-                <InfoSubSection title="14:00 - 18:00: Garden Party at our house">
+                  </CardContent>
+                </CardSection>
+                <CardSection title="14:00 - 18:00: Garden Party at our house">
                   <p>We'll be having a party in our garden, so people can come and see our house.</p>
                   <p>More importantly, people can come and meet Jessie!</p>
                   <p>
@@ -60,8 +61,8 @@ export const Schedule: FC = () => {
                     cheaper to take a taxi between four people. Royal Cars (01865 777 333) are usually pretty good, and
                     they have an app which works a bit like Uber.
                   </p>
-                </InfoSubSection>
-                <InfoSubSection title="18:00 - 21:00: Dinner at the Talkhouse">
+                </CardSection>
+                <CardSection title="18:00 - 21:00: Dinner at the Talkhouse">
                   <p>We're looking to book a meal at our local pub, which does great food.</p>
                   <p>
                     <b>Getting to The Talkhouse:</b> The pub is about half a mile's walk from our house. We'll likely
@@ -71,15 +72,15 @@ export const Schedule: FC = () => {
                     <b>Getting back to Oxford:</b> We strongly recommend pre-booking taxis. It's a bit of a pain for the
                     drivers to come out to where we live, so there's sometimes quite a wait if you don't pre-book.
                   </p>
-                </InfoSubSection>
+                </CardSection>
               </Card>
             </>
           )}
           <Card secondary title="Friday 15th September" collapsible>
-            <InfoSubSection title="15:00 - 17:00: Check in at Eastgate Hotel">
+            <CardSection title="15:00 - 17:00: Check in at Eastgate Hotel">
               <p>We’ll be hanging out in the lounge to greet any early arrivals.</p>
-            </InfoSubSection>
-            <InfoSubSection title="19:00 - Midnight: Cocktails at The House">
+            </CardSection>
+            <CardSection title="19:00 - Midnight: Cocktails at The House">
               <p>
                 We’ve booked the upper floor of The House, which is just off High Street, around a five minute walk from
                 the Eastgate Hotel.
@@ -87,16 +88,16 @@ export const Schedule: FC = () => {
               <p>
                 <b>Dress code:</b> Smart casual (ie. jeans are okay). Feel free to go more casual if you're travelling.
               </p>
-            </InfoSubSection>
+            </CardSection>
           </Card>
           <Card title="Saturday 16th September" collapsible>
-            <InfoSubSection title="7:30 - 10:30: Breakfast at the Eastgate Hotel">
+            <CardSection title="7:30 - 10:30: Breakfast at the Eastgate Hotel">
               <p>
                 Even if you’re not staying at the hotel, you’re very welcome to come and say hi. We’ll be here most of
                 the morning.
               </p>
-            </InfoSubSection>
-            <InfoSubSection title="11:00- 16:00: Free time around Oxford">
+            </CardSection>
+            <CardSection title="11:00- 16:00: Free time around Oxford">
               <p>We haven't planned anything during the day on Saturday, so people should enjoy the city!</p>
               <p>
                 You can find our recommendations for things to do and places to eat{' '}
@@ -105,29 +106,29 @@ export const Schedule: FC = () => {
                 </Link>{' '}
                 .
               </p>
-            </InfoSubSection>
-            <InfoSubSection title={`16:00 - ${weddingParty ? '17:30' : '18:00'}: Drinks at the Eastgate Hotel`}>
+            </CardSection>
+            <CardSection title={`16:00 - ${weddingParty ? '17:30' : '18:00'}: Drinks at the Eastgate Hotel`}>
               <p>While the event is being set up, people can meet in the bar at the Eastgate Hotel.</p>
-            </InfoSubSection>
+            </CardSection>
             {weddingParty && (
-              <InfoSubSection title="18:00 - 18:30: Wedding party photos outside museum">
+              <CardSection title="18:00 - 18:30: Wedding party photos outside museum">
                 <p>
                   The wedding party will go to the museum a little bit before everyone else to do a few group photos
                   outside the museum.
                 </p>
-              </InfoSubSection>
+              </CardSection>
             )}
-            <InfoSubSection title="18:30: Welcome Reception at Oxford University Museum of Natural History">
+            <CardSection title="18:30: Welcome Reception at Oxford University Museum of Natural History">
               <p>Drinks and canapes will be provided.</p>
-            </InfoSubSection>
-            <InfoSubSection title="19:30: Dinner"></InfoSubSection>
-            <InfoSubSection title="20:30: Speeches"></InfoSubSection>
-            <InfoSubSection title="21:00 - 23:45: Museum at night">
+            </CardSection>
+            <CardSection title="19:30: Dinner"></CardSection>
+            <CardSection title="20:30: Speeches"></CardSection>
+            <CardSection title="21:00 - 23:45: Museum at night">
               <p>
                 People are free to enjoy the museum for the last few hours! There'll be a bar set up, and we're planning
                 to have a few board game tables.
               </p>
-            </InfoSubSection>
+            </CardSection>
 
             <div className="flex flex-col gap-3">
               <p>
@@ -147,13 +148,13 @@ export const Schedule: FC = () => {
             </div>
           </Card>
           <Card secondary title="Sunday 17th September" collapsible>
-            <InfoSubSection title="7:30 - 10:30: Breakfast at Eastgate Hotel"></InfoSubSection>
-            <InfoSubSection title="12:00: TBA">
+            <CardSection title="7:30 - 10:30: Breakfast at Eastgate Hotel"></CardSection>
+            <CardSection title="12:00: TBA">
               <p>
                 We're planning on doing something on the Sunday, but we're not sure what. We'll let people know when
                 we've decided!
               </p>
-            </InfoSubSection>
+            </CardSection>
           </Card>
         </motion.div>
       </div>
