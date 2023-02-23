@@ -21,13 +21,13 @@ export const Accommodation: FC = () => {
               are a bit quieter.
             </p>
           </Card>
-          <div className="flex gap-5 flex-col sm:flex-row w-full">
+          <div className="flex gap-5 flex-col sm:flex-row w-[96%]">
             <div
-              className="w-full h-[30vh] rounded-none sm:rounded-lg bg-cover bg-center sm:bg-bottom"
+              className="w-full h-[30vh] rounded-md sm:rounded-lg bg-cover bg-center sm:bg-bottom"
               style={{ backgroundImage: `url(${HotelBar})` }}
             />
             <div
-              className="w-full h-[30vh] rounded-none sm:rounded-lg bg-cover bg-center sm:bg-bottom"
+              className="w-full h-[30vh] rounded-md sm:rounded-lg bg-cover bg-center sm:bg-bottom"
               style={{ backgroundImage: `url(${HotelLounge})` }}
             />
           </div>
@@ -42,7 +42,7 @@ export const Accommodation: FC = () => {
             </p>
           </Card>
           <div
-            className="w-full h-[50vh] sm:h-[70vh] rounded-none sm:rounded-lg bg-cover bg-center"
+            className="w-[96%] h-[50vh] sm:h-[70vh] rounded-md sm:rounded-lg bg-cover bg-center"
             style={{ backgroundImage: `url(${HotelExterior})` }}
           />
           <ImageLoader url={HotelExterior} />

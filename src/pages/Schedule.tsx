@@ -15,7 +15,7 @@ export const Schedule: FC = () => {
 
   return (
     <PageContainer pageTitle="Schedule">
-      <div className="flex flex-col items-center gap-5 py-10">
+      <motion.div layout className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="Schedule" className="md:hidden" />
         <motion.div layout className="flex flex-col gap-10 md:gap-5 w-full">
           <Card secondary title="Provisional Schedule">
@@ -157,7 +157,7 @@ export const Schedule: FC = () => {
             </CardSection>
           </Card>
         </motion.div>
-      </div>
+      </motion.div>
     </PageContainer>
   );
 };

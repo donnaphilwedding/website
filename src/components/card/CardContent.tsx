@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { FC, ReactNode } from 'react';
-import { merge } from '../../utils/merge';
 
 interface Props {
   className?: string;

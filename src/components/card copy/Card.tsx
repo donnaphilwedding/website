@@ -1,4 +1,4 @@
-import { FC, HTMLAttributes, useEffect, useState } from 'react';
+import React, { FC, HTMLAttributes, useEffect, useState } from 'react';
 import { merge } from '../../utils/merge';
 import { HiOutlineChevronRight } from 'react-icons/hi';
 import { motion } from 'framer-motion';
@@ -10,7 +10,14 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   forceOpen?: boolean;
 }
 
-export const Card: FC<Props> = ({ title, secondary, children, className, collapsible = false, forceOpen = false }) => {
+export const Card: FC<Props> = ({
+  title,
+  secondary,
+  children,
+  className,
+  collapsible = false,
+  forceOpen = false
+}) => {
   const [collapsed, setCollapsed] = useState<boolean>(collapsible && !forceOpen);
 
   useEffect(() => {
@@ -43,17 +50,22 @@ export const Card: FC<Props> = ({ title, secondary, children, className, collaps
         <motion.div
           layout
           className={merge('flex flex-col gap-5', className)}
-          initial={{ opacity: 0 }}
           variants={{
             open: {
-              opacity: 1,
               transition: {
-                duration: 0.2,
-                delay: 0.2
+                type: 'spring',
+                bounce: 0,
+                duration: 0.7,
+                delayChildren: 0.3,
+                staggerChildren: 0.05
               }
             },
             closed: {
-              opacity: 0
+              transition: {
+                type: 'spring',
+                bounce: 0,
+                duration: 0.3
+              }
             }
           }}
         >
