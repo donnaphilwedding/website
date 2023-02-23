@@ -82,10 +82,8 @@ export const FoodInfo: FC<FormCardProps> = ({ responses, setResponses, onComplet
       <CardSection title="Saturday Evening Meal">
         <div>
           For the Saturday evening, we're planning a buffet style meal. People will get to try a few different things,
-          and there should be something for everyone.
-        </div>
-        <div>
-          We'd like to get people's thoughts on what appeals most to them, to make sure we order the right amounts.
+          and there should be something for everyone. We'd like to get people's thoughts on what appeals most to them,
+          to make sure we order the right amounts.
         </div>
         <div>
           How would you feel about the following main course dishes? There will also be a selection of side dishes, and

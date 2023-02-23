@@ -5,6 +5,7 @@ import { Choice } from '../../components/form/form.types';
 import { Card } from '../../components/card/Card';
 import { EventDay } from '../../utils/rsvp.types';
 import { FormCardProps } from './rsvpForm.types';
+import { Link } from 'react-router-dom';
 
 const checkboxChoices: Choice<EventDay>[] = [
   {
@@ -28,6 +29,18 @@ export const EventInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
 
   return (
     <Card title="Event Details">
+      <p>
+        We're holding three events across the weekend. The Saturday evening event is the biggest one. The Friday event
+        is a welcome reception so we can greet people as they arrive. The Sunday event is a bit uncertain at the moment-
+        what we're able to do on that day really depends on how many people are available.
+      </p>
+      <p>
+        For more details on the events, see{' '}
+        <Link className="underline" to="/schedule" target="_blank">
+          here
+        </Link>
+        {'.'}
+      </p>
       <CheckboxListInput
         name="Which events are you planning to attend?"
         description="This isn't a solid commitment- we're trying to gauge interest and maximum numbers for the three events."
