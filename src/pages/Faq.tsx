@@ -38,6 +38,18 @@ export const Faq: FC = () => {
                 there in comfortable shoes and change, that's totally fine.
               </p>
             </Question>
+            <Question question="Why can't we walk around with red wine?">
+              <p>
+                The natural history museum is a listed building, so there are quite a few restrictions on what can be
+                served. The biggest concern is the original stone floor- if a dark coloured drink gets spilt on it, it's
+                incredibly difficult to remove the stain.
+              </p>
+              <p>
+                As a result, the bar will have a slightly reduced menu- apologies if they don't have your favourite
+                drink! We'll also need to be careful with red wine and coffee- you'll need to sit at a table if you're
+                drinking either of those.
+              </p>
+            </Question>
             <Question question="Will there be a quiet area in the museum?">
               <p>There's a couple of other small side rooms people can use if they need a quiet area.</p>
             </Question>
@@ -50,8 +62,8 @@ export const Faq: FC = () => {
             <Question question="Are children welcome at the events?">
               <p>
                 Yes! For the cocktail bar, we have a private room booked, but they won't be allowed in the downstairs
-                main bar area. For the museum party, they'll be free to walk around the museum with everyone else. Some of
-                the exhibits are touch friendly, but not all, so they'll need quite a bit of supervision.
+                main bar area. For the museum party, they'll be free to walk around the museum with everyone else. Some
+                of the exhibits are touch friendly, but not all, so they'll need quite a bit of supervision.
               </p>
             </Question>
           </Card>
@@ -72,15 +84,15 @@ export const Faq: FC = () => {
               </p>
               <p>We recommend using one of the park and rides, or parking in Forest Hill and getting a taxi.</p>
               <motion.iframe
-              layout
-              title={'Park and Rides Around Oxford'}
-              src={'https://www.google.com/maps/d/embed?mid=1tM_XZ6OL9FFR9vJeYKjLUBpHubM&ehbc=2E312F'}
-              height="300"
-              className="border rounded-sm"
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></motion.iframe>
+                layout
+                title={'Park and Rides Around Oxford'}
+                src={'https://www.google.com/maps/d/embed?mid=1tM_XZ6OL9FFR9vJeYKjLUBpHubM&ehbc=2E312F'}
+                height="300"
+                className="border rounded-sm"
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></motion.iframe>
             </Question>
           </Card>
           <Card title="Food" collapsible>
@@ -113,16 +125,15 @@ export const Faq: FC = () => {
                 18:30 on a Saturday.
               </p>
               <motion.iframe
-              layout
-              title={'Parking near the museum'}
-              src={'https://www.google.com/maps/d/u/1/embed?mid=1HHVLWvH6SqVtpicODULq86Qpkik93dI&ehbc=2E312F'}
-              height="300"
-              className="border rounded-sm"
-              allowFullScreen={false}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></motion.iframe>
-              
+                layout
+                title={'Parking near the museum'}
+                src={'https://www.google.com/maps/d/u/1/embed?mid=1HHVLWvH6SqVtpicODULq86Qpkik93dI&ehbc=2E312F'}
+                height="300"
+                className="border rounded-sm"
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></motion.iframe>
             </Question>
             <Question question="Can we walk between the museum and the hotel?">
               <p>
