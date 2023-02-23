@@ -1,7 +1,8 @@
+import { motion } from 'framer-motion';
 import { FC, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { UserContext, UserType } from '../components/auth/UserContext';
-import { InfoSection } from '../components/InfoSection';
+import { Card } from '../components/Card';
 import { InfoSubSection } from '../components/InfoSubsection';
 import { PageContainer } from '../components/PageContainer';
 import { PageTitleCard } from '../components/PageTitleCard';
@@ -15,12 +16,12 @@ export const Schedule: FC = () => {
     <PageContainer pageTitle="Schedule">
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="Schedule" className="md:hidden" />
-        <div className="flex flex-col gap-10 md:gap-5 w-full">
-          <InfoSection secondary title="Provisional Schedule">
+        <motion.div layout className="flex flex-col gap-10 md:gap-5 w-full">
+          <Card secondary title="Provisional Schedule">
             <p>This is a work in progress schedule. Times are likely to change!</p>
-          </InfoSection>
+          </Card>
           {!weddingParty ? (
-            <InfoSection title="The Week Before">
+            <Card title="The Week Before">
               <p>
                 During the week before the wedding, we’ll be holding a low key ceremony with just close friends and
                 family.
@@ -29,10 +30,10 @@ export const Schedule: FC = () => {
                 We’re choosing not to hold it on the main weekend to keep our plans on the Saturday as simple as
                 possible- meaning we get to spend more time with people!
               </p>
-            </InfoSection>
+            </Card>
           ) : (
             <>
-              <InfoSection title="Wednesday 16th September" collapsible>
+              <Card title="Wednesday 16th September" collapsible>
                 <InfoSubSection title="10:30 - 11:00: The Ceremony">
                   <p>We're holding the ceremony at 10:30 at the registry office in Oxford.</p>
                   <p>
@@ -71,10 +72,10 @@ export const Schedule: FC = () => {
                     drivers to come out to where we live, so there's sometimes quite a wait if you don't pre-book.
                   </p>
                 </InfoSubSection>
-              </InfoSection>
+              </Card>
             </>
           )}
-          <InfoSection secondary title="Friday 15th September" collapsible>
+          <Card secondary title="Friday 15th September" collapsible>
             <InfoSubSection title="15:00 - 17:00: Check in at Eastgate Hotel">
               <p>We’ll be hanging out in the lounge to greet any early arrivals.</p>
             </InfoSubSection>
@@ -87,8 +88,8 @@ export const Schedule: FC = () => {
                 <b>Dress code:</b> Smart casual (ie. jeans are okay). Feel free to go more casual if you're travelling.
               </p>
             </InfoSubSection>
-          </InfoSection>
-          <InfoSection title="Saturday 16th September" collapsible>
+          </Card>
+          <Card title="Saturday 16th September" collapsible>
             <InfoSubSection title="7:30 - 10:30: Breakfast at the Eastgate Hotel">
               <p>
                 Even if you’re not staying at the hotel, you’re very welcome to come and say hi. We’ll be here most of
@@ -144,8 +145,8 @@ export const Schedule: FC = () => {
                 will be wearing converses.
               </p>
             </div>
-          </InfoSection>
-          <InfoSection secondary title="Sunday 17th September" collapsible>
+          </Card>
+          <Card secondary title="Sunday 17th September" collapsible>
             <InfoSubSection title="7:30 - 10:30: Breakfast at Eastgate Hotel"></InfoSubSection>
             <InfoSubSection title="12:00: TBA">
               <p>
@@ -153,8 +154,8 @@ export const Schedule: FC = () => {
                 we've decided!
               </p>
             </InfoSubSection>
-          </InfoSection>
-        </div>
+          </Card>
+        </motion.div>
       </div>
     </PageContainer>
   );

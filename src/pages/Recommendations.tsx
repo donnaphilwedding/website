@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { InfoSection } from '../components/InfoSection';
+import { Card } from '../components/Card';
 import { PageContainer } from '../components/PageContainer';
 import { PageTitleCard } from '../components/PageTitleCard';
 import { RecommendationSection } from '../components/RecommendationSection';
@@ -10,7 +10,7 @@ export const Recommendations: FC = () => {
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="Recommendations" className="md:hidden" />
         <div className="flex flex-col gap-10 md:gap-5 w-full">
-          <InfoSection title="Drinks and Snacks" collapsible>
+          <Card title="Drinks and Snacks" collapsible>
             <RecommendationSection
               title="Knoops"
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.8524675455014!2d-1.258559484354357!3d51.754021279676415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c7fbe10d59ef%3A0xc38a836867b5c330!2sKnoops%20Chocolate!5e0!3m2!1sen!2suk!4v1676317014607!5m2!1sen!2suk"
@@ -32,8 +32,8 @@ export const Recommendations: FC = () => {
               Cute little ice cream place. They make really good triple layer ice cream cakes- Donna often gets one for
               her birthday.
             </RecommendationSection>
-          </InfoSection>
-          <InfoSection title="Quick Meals" collapsible>
+          </Card>
+          <Card title="Quick Meals" collapsible>
             <RecommendationSection
               title="Sasi's Thai"
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9417825989913!2d-1.2612018689430995!3d51.752388114670175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6af97d12869%3A0x9c86cd232986a42b!2sSasi&#39;s%20Thai!5e0!3m2!1sen!2suk!4v1676319439837!5m2!1sen!2suk"
@@ -54,8 +54,8 @@ export const Recommendations: FC = () => {
               Our favourite sandwich shop in Oxford. There's actually quite a few branches throughout the city which
               serve different things. Some of them do pastas, salads and stews as well.
             </RecommendationSection>
-          </InfoSection>
-          <InfoSection title="Restaurants" collapsible>
+          </Card>
+          <Card title="Restaurants" collapsible>
             <RecommendationSection
               title="Pierre Victoire"
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.6027117355575!2d-1.263954784354131!3d51.75858797967717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a701273113%3A0x6e9c6b5463ca5051!2sPierre%20Victoire!5e0!3m2!1sen!2suk!4v1676319956843!5m2!1sen!2suk"
@@ -76,8 +76,8 @@ export const Recommendations: FC = () => {
             >
               Traditional English pub which serves a 100% vegetarian menu.
             </RecommendationSection>
-          </InfoSection>
-          <InfoSection title="Things To Do" collapsible>
+          </Card>
+          <Card title="Things To Do" collapsible>
             <RecommendationSection
               title="Oxford Botanic Gardens"
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1257879.1960042487!2d-2.3702992936752993!3d51.99238442891093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6b29e292543%3A0x561e52e8d4b04f75!2sOxford%20Botanic%20Garden!5e0!3m2!1sen!2suk!4v1676320970046!5m2!1sen!2suk"
@@ -104,7 +104,7 @@ export const Recommendations: FC = () => {
               Phil's favourite book store. It has a massive basement where all the science books are kept. Across the
               road, there's a second smaller bookstore which specialises in comics, fantasy novels and board games.
             </RecommendationSection>
-          </InfoSection>
+          </Card>
         </div>
       </div>
     </PageContainer>

@@ -3,7 +3,7 @@ import { Button } from '../../components/Button';
 import { CheckboxListInput } from '../../components/form/CheckboxListInput';
 import { Choice } from '../../components/form/form.types';
 import { TextAreaInput } from '../../components/form/TextAreaInput';
-import { InfoSection } from '../../components/InfoSection';
+import { Card } from '../../components/Card';
 import { EventDay } from '../../utils/rsvp.types';
 import { FormCardProps } from './rsvpForm.types';
 
@@ -28,7 +28,7 @@ export const EventInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
   };
 
   return (
-    <InfoSection title="Event Details">
+    <Card title="Event Details">
       <CheckboxListInput
         name="Which events are you planning to attend?"
         description="This isn't a solid commitment- we're trying to gauge interest and maximum numbers for the three events."
@@ -40,6 +40,6 @@ export const EventInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
         <Button onClick={onBack}>Back</Button>
         <Button onClick={onComplete}>Next</Button>
       </div>
-    </InfoSection>
+    </Card>
   );
 };

@@ -1,6 +1,6 @@
 import { FC, useState } from 'react';
 import { Button } from '../../components/Button';
-import { InfoSection } from '../../components/InfoSection';
+import { Card } from '../../components/Card';
 import { PageContainer } from '../../components/PageContainer';
 import { PageTitleCard } from '../../components/PageTitleCard';
 import { Responses } from '../../utils/rsvp.types';
@@ -52,10 +52,10 @@ export const RSVP: FC = () => {
           <FoodInfo responses={response} setResponses={setResponse} onComplete={onNext} onBack={onBack} />
         )}
         {page === RsvpPage.COMPLETE && (
-          <InfoSection>
+          <Card>
             <div>Your RSVP has been submitted!</div>
             <Button className="w-72" onClick={reset}>RSVP for another person</Button>
-          </InfoSection>
+          </Card>
         )}
       </div>
     </PageContainer>

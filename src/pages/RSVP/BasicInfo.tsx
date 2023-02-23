@@ -2,7 +2,7 @@ import { FC, useState } from 'react';
 import { Button } from '../../components/Button';
 import { BooleanInput } from '../../components/form/BooleanInput';
 import { TextInput } from '../../components/form/TextInput';
-import { InfoSection } from '../../components/InfoSection';
+import { Card } from '../../components/Card';
 import { FormCardProps } from './rsvpForm.types';
 
 export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, onComplete, onBack }) => {
@@ -38,7 +38,7 @@ export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
   };
 
   return (
-    <InfoSection title="Guest Details">
+    <Card title="Guest Details">
       <div>
         <b>Note: </b>The online RSVP is currently being developed. Please let Phil know after you've submitted, so he
         can check it went through!
@@ -67,6 +67,6 @@ export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
       <div className="flex justify-end">
         <Button onClick={validateAndComplete}>{responses.attending === false ? 'Submit response' : 'Next'}</Button>
       </div>
-    </InfoSection>
+    </Card>
   );
 };

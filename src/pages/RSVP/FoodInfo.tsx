@@ -3,7 +3,7 @@ import { Button } from '../../components/Button';
 import { ChoiceInput } from '../../components/form/ChoiceInput';
 import { Choice } from '../../components/form/form.types';
 import { TextAreaInput } from '../../components/form/TextAreaInput';
-import { InfoSection } from '../../components/InfoSection';
+import { Card } from '../../components/Card';
 import { InfoSubSection } from '../../components/InfoSubsection';
 import { FoodChoice } from '../../utils/rsvp.types';
 import { FormCardProps } from './rsvpForm.types';
@@ -72,7 +72,7 @@ export const FoodInfo: FC<FormCardProps> = ({ responses, setResponses, onComplet
   };
 
   return (
-    <InfoSection title="Food Choices">
+    <Card title="Food Choices">
       <TextAreaInput
         name="Do you have any strict dietary requirements?"
         description="eg. allergies and intolerances, religious restrictions, etc."
@@ -123,6 +123,6 @@ export const FoodInfo: FC<FormCardProps> = ({ responses, setResponses, onComplet
         <Button onClick={onBack}>Back</Button>
         <Button onClick={onComplete}>Submit</Button>
       </div>
-    </InfoSection>
+    </Card>
   );
 };

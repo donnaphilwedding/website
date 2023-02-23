@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { ImageLoader } from '../components/ImageLoader';
-import { InfoSection } from '../components/InfoSection';
+import { Card } from '../components/Card';
 import { PageContainer } from '../components/PageContainer';
 import { PageTitleCard } from '../components/PageTitleCard';
 import { Question } from '../components/Question';
@@ -12,7 +12,7 @@ export const Faq: FC = () => {
       <div className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="FAQ" className="md:hidden" />
         <div className="flex flex-col items-center gap-5 w-full">
-          <InfoSection title="Events" collapsible>
+          <Card title="Events" collapsible>
             <Question question="When is the ceremony?">
               <p>We're signing the contract earlier in the week, with just a few close family members.</p>
               <p>
@@ -46,8 +46,8 @@ export const Faq: FC = () => {
                 sort out the seating plan and the food order. No worries if they weren't named on the invite.
               </p>
             </Question>
-          </InfoSection>
-          <InfoSection title="Accommodation" secondary collapsible>
+          </Card>
+          <Card title="Accommodation" secondary collapsible>
             <Question question="How do we book hotel rooms at the Eastgate?">
               <p>Just let Donna or Phil know you want a room and we'll arrange one for you.</p>
             </Question>
@@ -64,8 +64,8 @@ export const Faq: FC = () => {
               </p>
               <p>We recommend using one of the park and rides, or parking in Forest Hill and getting a taxi.</p>
             </Question>
-          </InfoSection>
-          <InfoSection title="Food" collapsible>
+          </Card>
+          <Card title="Food" collapsible>
             <Question question="When will we be eating on Saturday?">
               <p>We are aiming to serve dinner at 19:30 at the museum. There will also be canapes from 18:30.</p>
               <p>
@@ -83,8 +83,8 @@ export const Faq: FC = () => {
                 throughout the evening.
               </p>
             </Question>
-          </InfoSection>
-          <InfoSection title="Travel" secondary collapsible>
+          </Card>
+          <Card title="Travel" secondary collapsible>
             <Question question="Where can I park near the museum?">
               <p>
                 The museum itself doesn't have a car park. Their website recommends you park at the Westgate Center, or
@@ -104,8 +104,8 @@ export const Faq: FC = () => {
                 Uber-like app where you can pre-book travel.
               </p>
             </Question>
-          </InfoSection>
-          <InfoSection title="Jessie" collapsible>
+          </Card>
+          <Card title="Jessie" collapsible>
             <Question question="Will Jessie be at the wedding?">
               <p>Jessie will not be there. She's going to be staying at a local boarding kennel for the weekend.</p>
               <p>
@@ -120,7 +120,7 @@ export const Faq: FC = () => {
                 style={{ backgroundImage: `url(${Jessie})` }}
               />
             </Question>
-          </InfoSection>
+          </Card>
         </div>
       </div>
       <ImageLoader url={Jessie} />
