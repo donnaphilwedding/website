@@ -85,6 +85,16 @@ export const Schedule: FC = () => {
                 We’ve booked the upper floor of The House, which is just off High Street, around a five minute walk from
                 the Eastgate Hotel.
               </p>
+              <motion.iframe
+          layout
+          title={"7 Minute Walk to The House"}
+          src={"https://www.google.com/maps/d/u/1/embed?mid=1iN-BZexdOpjJDEa4XFzqeOuGR4ah3Y0&ehbc=2E312F"}
+          height="300"
+          className="border rounded-sm"
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></motion.iframe>
               <p>
                 <b>Dress code:</b> Smart casual (ie. jeans are okay). Feel free to go more casual if you're travelling.
               </p>
@@ -140,11 +150,23 @@ export const Schedule: FC = () => {
                 Taxis in Oxford are fairly good, but we recommend pre-booking- it can get quite busy on a Saturday
                 night.
               </p>
+              <motion.iframe
+          layout
+          title={"15 Minute Walk to the Museum"}
+          src={"https://www.google.com/maps/d/u/1/embed?mid=1NLtf9VrYCmtwxPrveTVc0znk_uTUOEw&ehbc=2E312F"}
+          height="300"
+          className="border rounded-sm"
+          allowFullScreen={false}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></motion.iframe>
               <p>
                 <b>Dress code:</b> Smart, but comfy! eg. Shirt and tie for men, cocktail dress for women, but if you
                 don't like wearing ties/dresses/jackets/etc., no worries- feel free to wear something different. Phil
                 will be wearing converses.
               </p>
+
+              
             </div>
           </Card>
           <Card secondary title="Sunday 17th September" collapsible>
