@@ -5,6 +5,7 @@ import { PageContainer } from '../components/PageContainer';
 import { PageTitleCard } from '../components/PageTitleCard';
 import { Question } from '../components/Question';
 import Jessie from '../images/Jessie.jpg';
+import { motion } from 'framer-motion';
 
 export const Faq: FC = () => {
   return (
@@ -42,8 +43,15 @@ export const Faq: FC = () => {
             </Question>
             <Question question="Can I bring my partner?">
               <p>
-                Of course! We'll need to know by early August if you're bringing someone, because we'll need to
-                sort out the seating plan and the food order. No worries if they weren't named on the invite.
+                Of course! We'll need to know by early August if you're bringing someone, because we'll need to sort out
+                the seating plan and the food order. No worries if they weren't named on the invite.
+              </p>
+            </Question>
+            <Question question="Are children welcome at the events?">
+              <p>
+                Yes! For the cocktail bar, we have a private room booked, but they won't be allowed in the downstairs
+                main bar area. For the museum party, they'll be free to walk around the museum with everyone else. Some of
+                the exhibits are touch friendly, but not all, so they'll need quite a bit of supervision.
               </p>
             </Question>
           </Card>
@@ -63,6 +71,16 @@ export const Faq: FC = () => {
                 available, but they have to be booked in advance.
               </p>
               <p>We recommend using one of the park and rides, or parking in Forest Hill and getting a taxi.</p>
+              <motion.iframe
+              layout
+              title={'Park and Rides Around Oxford'}
+              src={'https://www.google.com/maps/d/embed?mid=1tM_XZ6OL9FFR9vJeYKjLUBpHubM&ehbc=2E312F'}
+              height="300"
+              className="border rounded-sm"
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></motion.iframe>
             </Question>
           </Card>
           <Card title="Food" collapsible>
@@ -94,6 +112,17 @@ export const Faq: FC = () => {
                 Farndon Road is another option- it's about a 15 minute walk from the museum, but has free parking after
                 18:30 on a Saturday.
               </p>
+              <motion.iframe
+              layout
+              title={'Parking near the museum'}
+              src={'https://www.google.com/maps/d/u/1/embed?mid=1HHVLWvH6SqVtpicODULq86Qpkik93dI&ehbc=2E312F'}
+              height="300"
+              className="border rounded-sm"
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></motion.iframe>
+              
             </Question>
             <Question question="Can we walk between the museum and the hotel?">
               <p>
@@ -103,6 +132,16 @@ export const Faq: FC = () => {
                 If people would prefer to take a taxi, we recommend using Royal Cars (01865 777 333). They also have an
                 Uber-like app where you can pre-book travel.
               </p>
+              <motion.iframe
+                layout
+                title={'15 Minute Walk to the Museum'}
+                src={'https://www.google.com/maps/d/u/1/embed?mid=1NLtf9VrYCmtwxPrveTVc0znk_uTUOEw&ehbc=2E312F'}
+                height="300"
+                className="border rounded-sm"
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></motion.iframe>
             </Question>
           </Card>
           <Card title="Jessie" collapsible>
