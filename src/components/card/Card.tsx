@@ -31,11 +31,14 @@ export const Card: FC<Props> = ({ title, secondary, children, className, collaps
       layout
       className={cardClass}
       style={{ borderRadius: 5 }}
-      onClick={collapsed ? () => setCollapsed(false) : undefined}
       animate={collapsed ? 'closed' : 'open'}
     >
       {title && (
-        <motion.p layout className="font-cormorantSc text-2xl text-center mb-2">
+        <motion.p
+          layout
+          className="font-cormorantSc text-2xl text-center mb-2"
+          onClick={collapsible ? () => setCollapsed(!collapsed) : undefined}
+        >
           {title}
         </motion.p>
       )}
