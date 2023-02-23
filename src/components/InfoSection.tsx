@@ -1,6 +1,7 @@
 import { FC, HTMLAttributes, useEffect, useState } from 'react';
 import { merge } from '../utils/merge';
 import { HiOutlineChevronDown, HiOutlineChevronRight } from 'react-icons/hi';
+import { motion } from 'framer-motion';
 
 interface InfoSectionProps extends HTMLAttributes<HTMLDivElement> {
   title?: string;
@@ -9,7 +10,14 @@ interface InfoSectionProps extends HTMLAttributes<HTMLDivElement> {
   forceOpen?: boolean;
 }
 
-export const InfoSection: FC<InfoSectionProps> = ({ title, secondary, children, className, collapsible = false, forceOpen = false }) => {
+export const InfoSection: FC<InfoSectionProps> = ({
+  title,
+  secondary,
+  children,
+  className,
+  collapsible = false,
+  forceOpen = false
+}) => {
   const [collapsed, setCollapsed] = useState<boolean>(collapsible && !forceOpen);
 
   useEffect(() => {
@@ -26,14 +34,23 @@ export const InfoSection: FC<InfoSectionProps> = ({ title, secondary, children, 
   }
 
   return (
-    <div className={cardClass} onClick={collapsed ? () => setCollapsed(false) : undefined}>
+    <motion.div
+      className={cardClass}
+      onClick={collapsed ? () => setCollapsed(false) : undefined}
+      animate={collapsed ? 'closed' : 'open'}
+    >
       {title && <p className="font-cormorantSc text-2xl text-center mb-2">{title}</p>}
       {!collapsed && <div className={merge('flex flex-col gap-5', className)}>{children}</div>}
       {collapsible && (
-        <button type="button" className='absolute top-4 right-4' onClick={() => setCollapsed(!collapsed)}>
-          {!collapsed ? <HiOutlineChevronDown className="h-6 w-6" /> : <HiOutlineChevronRight className="h-6 w-6" />}
-        </button>
+        <motion.button
+          variants={{ open: { rotate: 90 }, closed: { rotate: 0 } }}
+          type="button"
+          className="absolute top-4 right-4"
+          onClick={() => setCollapsed(!collapsed)}
+        >
+          <HiOutlineChevronRight className="h-6 w-6" />
+        </motion.button>
       )}
-    </div>
+    </motion.div>
   );
 };
