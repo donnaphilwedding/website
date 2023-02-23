@@ -10,14 +10,7 @@ interface Props extends HTMLAttributes<HTMLDivElement> {
   forceOpen?: boolean;
 }
 
-export const Card: FC<Props> = ({
-  title,
-  secondary,
-  children,
-  className,
-  collapsible = false,
-  forceOpen = false
-}) => {
+export const Card: FC<Props> = ({ title, secondary, children, className, collapsible = false, forceOpen = false }) => {
   const [collapsed, setCollapsed] = useState<boolean>(collapsible && !forceOpen);
 
   useEffect(() => {
@@ -48,25 +41,19 @@ export const Card: FC<Props> = ({
       )}
       {!collapsed && (
         <motion.div
-          layout
           className={merge('flex flex-col gap-5', className)}
+          initial={{ opacity: collapsible ? 0 : 1 }}
           variants={{
             open: {
-              transition: {
-                type: 'spring',
-                bounce: 0,
-                duration: 0.7,
-                delayChildren: 0.3,
-                staggerChildren: 0.05
-              }
+              opacity: 1
             },
             closed: {
-              transition: {
-                type: 'spring',
-                bounce: 0,
-                duration: 0.3
-              }
+              opacity: 0
             }
+          }}
+          transition={{
+            duration: 0.2,
+            delay: 0.2
           }}
         >
           {children}
