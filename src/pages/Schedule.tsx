@@ -34,7 +34,7 @@ export const Schedule: FC = () => {
             </Card>
           ) : (
             <>
-              <Card title="Wednesday 16th September" collapsible>
+              <Card title="Wednesday 13th September" collapsible>
                 <CardSection title="10:30 - 11:00: The Ceremony">
                   <CardContent>We're holding the ceremony at 10:30 at the registry office in Oxford.</CardContent>
                   <CardContent>
