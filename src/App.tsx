@@ -12,6 +12,7 @@ import { UserContextProvider } from './components/auth/UserContext';
 import { Faq } from './pages/Faq';
 import { Recommendations } from './pages/Recommendations';
 import { RSVP } from './pages/RSVP/RSVP';
+import { Gifts } from './pages/Gifts';
 
 export const App: FC = () => {
   return (
@@ -28,6 +29,7 @@ export const App: FC = () => {
               <Route path="/faq" element={<Faq />} />
               <Route path="/recommendations" element={<Recommendations />} />
               <Route path="/rsvp" element={<RSVP />} />
+              <Route path="/gifts" element={<Gifts />} />
             </Route>
             <Route path="/login" element={<Login />} />
           </Routes>
