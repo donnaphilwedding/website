@@ -24,16 +24,6 @@ export const Faq: FC = () => {
                 time with people and enjoying the museum!
               </p>
             </Question>
-            <Question question="What is the dress code?">
-              <p>
-                For the Friday evening event, the dress code is smart casual. Jeans are totally fine, maybe with a nice
-                shirt or something. If you're travelling, don't worry about it too much.
-              </p>
-              <p>
-                For the Saturday, the dress code is smart, but very lenient. If people hate wearing suits/ties/dresses,
-                they're absolutely encouraged to wear something they're comfortable with. Phil plans to wear converses.
-              </p>
-            </Question>
             <Question question="Will there be places to leave bags and coats at the museum?">
               <p>
                 We'll have a side room at the museum where people can leave stuff. In particular, if people want to walk
@@ -69,7 +59,25 @@ export const Faq: FC = () => {
               </p>
             </Question>
           </Card>
-          <Card title="Accommodation" secondary collapsible>
+          <Card title="Dress Codes" collapsible secondary>
+            <Question question="What is the dress code?">
+              <p>
+                For the Friday evening event, the dress code is smart casual. Phil will be wearing jeans and a nice
+                shirt. If you're travelling, don't worry about it too much.
+              </p>
+              <p>
+                For the Saturday, the dress code is smart, but very lenient. If people hate wearing suits/ties/dresses,
+                they're absolutely encouraged to wear something they're comfortable with. Phil plans to wear converses.
+              </p>
+            </Question>
+            <Question question="What colour are the bridesmaids wearing?">
+              <p>
+                The bridesmaids will be wearing purple dresses, but we're totally fine with other people wearing purple
+                if they have a garment they're excited to wear.
+              </p>
+            </Question>
+          </Card>
+          <Card title="Accommodation" collapsible>
             <Question question="How do we book hotel rooms at the Eastgate?">
               <p>Just let Donna or Phil know you want a room and we'll arrange one for you.</p>
             </Question>
@@ -97,7 +105,7 @@ export const Faq: FC = () => {
               ></motion.iframe>
             </Question>
           </Card>
-          <Card title="Food" collapsible>
+          <Card title="Food" collapsible secondary>
             <Question question="When will we be eating on Saturday?">
               <p>We are aiming to serve dinner at 19:30 at the museum. There will also be canapes from 18:30.</p>
               <p>
@@ -116,7 +124,7 @@ export const Faq: FC = () => {
               </p>
             </Question>
           </Card>
-          <Card title="Travel" secondary collapsible>
+          <Card title="Travel" collapsible>
             <Question question="Where can I park near the museum?">
               <p>
                 The museum itself doesn't have a car park. Their website recommends you park at the Westgate Center, or
@@ -157,7 +165,7 @@ export const Faq: FC = () => {
               ></motion.iframe>
             </Question>
           </Card>
-          <Card title="Jessie" collapsible>
+          <Card title="Jessie" collapsible secondary>
             <Question question="Will Jessie be at the wedding?">
               <p>Jessie will not be there. She's going to be staying at a local boarding kennel for the weekend.</p>
               <p>
