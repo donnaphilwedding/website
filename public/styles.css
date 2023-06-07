@@ -634,6 +634,10 @@ video {
   height: 100%;
 }
 
+.h-8 {
+  height: 2rem;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -656,10 +660,6 @@ video {
 
 .h-16 {
   height: 4rem;
-}
-
-.h-8 {
-  height: 2rem;
 }
 
 .h-\[30vh\] {
@@ -696,6 +696,10 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-8 {
+  width: 2rem;
 }
 
 .w-64 {

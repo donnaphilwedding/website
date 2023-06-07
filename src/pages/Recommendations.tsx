@@ -19,18 +19,18 @@ export const Recommendations: FC = () => {
               choices! Really good if it's a little bit cold outside.
             </RecommendationSection>
             <RecommendationSection
-              title="Moo Moos"
+              title="Moo Moos Milkshakes"
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9433977997764!2d-1.259020184221007!3d51.75235857967615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6af9898c389%3A0x568b62147e5f60e4!2sMoo-Moo&#39;s!5e0!3m2!1sen!2suk!4v1676318669087!5m2!1sen!2suk"
             >
-              This was our favourite milkshake place in first year. They have a huge list of different things that
-              they'll blend into a milkshake.
+              We went here a lot during our first year. They have a huge list of different cakes and chocolate bars that
+              they'll blend into a milkshake for you.
             </RecommendationSection>
             <RecommendationSection
               title="G&Ds Ice Cream"
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2470.0966352087835!2d-1.2589199843545231!3d51.74955647967567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6b01e8d119f%3A0x7d856cbc5bfdf4b9!2sGeorge%20%26%20Danver!5e0!3m2!1sen!2suk!4v1676319028170!5m2!1sen!2suk"
             >
-              Cute little ice cream place. They make really good triple layer ice cream cakes- Donna often gets one for
-              her birthday.
+              Homemade ice cream store! There are three sites across Oxford. They make really good triple layer ice
+              cream cakes- Donna often gets one for her birthday.
             </RecommendationSection>
           </Card>
           <Card title="Quick Meals" collapsible>
@@ -38,8 +38,8 @@ export const Recommendations: FC = () => {
               title="Sasi's Thai"
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9417825989913!2d-1.2612018689430995!3d51.752388114670175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6af97d12869%3A0x9c86cd232986a42b!2sSasi&#39;s%20Thai!5e0!3m2!1sen!2suk!4v1676319439837!5m2!1sen!2suk"
             >
-              Small Thai place that serves a few different home made curries and stir fries. Great for a quick and easy
-              lunch.
+              Small Thai restaurant that serves a few different home made curries and stir fries. Great for a quick and
+              easy lunch.
             </RecommendationSection>
             <RecommendationSection
               title="Pie Minister"
@@ -82,7 +82,8 @@ export const Recommendations: FC = () => {
               title="Oxford Botanic Gardens"
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1257879.1960042487!2d-2.3702992936752993!3d51.99238442891093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6b29e292543%3A0x561e52e8d4b04f75!2sOxford%20Botanic%20Garden!5e0!3m2!1sen!2suk!4v1676320970046!5m2!1sen!2suk"
             >
-              The Oxford Botanic Gardens are just a few minutes' walk from the hotel.
+              The Oxford Botanic Gardens are just a few minutes' walk from the hotel. If you're a fan of the His Dark
+              Materials books, you can find the bench from the third book here!
             </RecommendationSection>
             <RecommendationSection
               title="Ashmolean Museum"
@@ -95,7 +96,7 @@ export const Recommendations: FC = () => {
               mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.9970077761122!2d-1.2486242843544653!3d51.751378279675976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6adcf3c9af1%3A0xcb00a0bd0b047829!2sOxford%20Punting!5e0!3m2!1sen!2suk!4v1676321304197!5m2!1sen!2suk"
             >
               There's a punt station just across the road from the gardens. You can rent a punt for up to 5 people for
-              around £30.
+              around £30. Don't wear your nicest clothes!
             </RecommendationSection>
             <RecommendationSection
               title="Blackwell's Bookstore"
