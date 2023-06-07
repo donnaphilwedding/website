@@ -15,21 +15,23 @@ export const Faq: FC = () => {
         <div className="flex flex-col items-center gap-5 w-full">
           <Card title="Events" collapsible>
             <Question question="When is the ceremony?">
-              <p>We're signing the contract earlier in the week, with just a few close family members.</p>
               <p>
-                We decided to go as low key as possible with the ceremony, because we're more excited about seeing
-                people and sharing Oxford with you!
+                We're signing the contract at a registry office earlier in the week, with just a few close family
+                members.
+              </p>
+              <p>
+                On the Saturday night, we're not doing any kind of ceremony. We decided we wanted to prioritise spending
+                time with people and enjoying the museum!
               </p>
             </Question>
             <Question question="What is the dress code?">
               <p>
                 For the Friday evening event, the dress code is smart casual. Jeans are totally fine, maybe with a nice
-                shirt or something. Feel free to ignore this if you're travelling.
+                shirt or something. If you're travelling, don't worry about it too much.
               </p>
               <p>
                 For the Saturday, the dress code is smart, but very lenient. If people hate wearing suits/ties/dresses,
-                they're absolutely encouraged to wear something they're comfortable with. eg. Phil plans to wear
-                converses.
+                they're absolutely encouraged to wear something they're comfortable with. Phil plans to wear converses.
               </p>
             </Question>
             <Question question="Will there be places to leave bags and coats at the museum?">
@@ -62,8 +64,8 @@ export const Faq: FC = () => {
             <Question question="Are children welcome at the events?">
               <p>
                 Yes! For the cocktail bar, we have a private room booked, but they won't be allowed in the downstairs
-                main bar area. For the museum party, they'll be free to walk around the museum with everyone else. Some
-                of the exhibits are touch friendly, but not all, so they'll need quite a bit of supervision.
+                main bar area. For the museum party, some of the exhibits are touch friendly, but not all, so they'll
+                need a bit of supervision.
               </p>
             </Question>
           </Card>

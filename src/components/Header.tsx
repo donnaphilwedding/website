@@ -49,9 +49,9 @@ export const Header: FC<HeaderProps> = ({ title }) => {
   return (
     <div>
       <div className="bg-primary text-white flex justify-between items-center py-3 px-5 border-b border-gray-300">
-        <div className="w-12">
+        <div className="w-12 flex items-center">
           <button onClick={() => setDrawerOpen(true)}>
-            <FiMenu />
+            <FiMenu className="w-8 h-8"/>
           </button>
         </div>
         <div className="hidden md:flex items-center gap-2">
