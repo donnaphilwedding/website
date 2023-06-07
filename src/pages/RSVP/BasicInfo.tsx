@@ -39,10 +39,6 @@ export const BasicInfo: FC<FormCardProps> = ({ responses, setResponses, onComple
 
   return (
     <Card title="Guest Details">
-      <div>
-        <b>Note: </b>The online RSVP is currently being developed. Please let Phil know after you've submitted, so he
-        can check it went through!
-      </div>
       <TextInput
         name="Name of guest(s)"
         className="w-full"

@@ -34,7 +34,7 @@ export const Schedule: FC = () => {
             </Card>
           ) : (
             <>
-              <Card title="Wednesday 16th September" collapsible>
+              <Card title="Wednesday 13th September" collapsible>
                 <CardSection title="10:30 - 11:00: The Ceremony">
                   <CardContent>We're holding the ceremony at 10:30 at the registry office in Oxford.</CardContent>
                   <CardContent>
@@ -63,7 +63,10 @@ export const Schedule: FC = () => {
                   </p>
                 </CardSection>
                 <CardSection title="18:00 - 21:00: Dinner at the Talkhouse">
-                  <p>We're looking to book a meal at our local pub, which does great food.</p>
+                  <p>
+                    We're booked in for a meal at our local pub, which does great food. The menu changes seasonally,
+                    so we'll send a link out once we know what they'll be serving.
+                  </p>
                   <p>
                     <b>Getting to The Talkhouse:</b> The pub is about half a mile's walk from our house. We'll likely
                     have a couple of drivers who can give lifts to anyone who wants one.
@@ -162,18 +165,35 @@ export const Schedule: FC = () => {
               ></motion.iframe>
               <p>
                 <b>Dress code:</b> Smart, but comfy! eg. Shirt and tie for men, cocktail dress for women, but if you
-                don't like wearing ties/dresses/jackets/etc., no worries- feel free to wear something different. Phil
+                don't like wearing ties/dresses/jackets/etc, no worries- feel free to wear something different. Phil
                 will be wearing converses.
               </p>
             </div>
           </Card>
           <Card secondary title="Sunday 17th September" collapsible>
             <CardSection title="7:30 - 10:30: Breakfast at Eastgate Hotel"></CardSection>
-            <CardSection title="12:00: TBA">
+            <CardSection title="12:00 - 15:00: Lunch at the Oxford Retreat">
               <p>
-                We're planning on doing something on the Sunday, but we're not sure what. We'll let people know when
-                we've decided!
+                We've booked large space in a pub which is very close to the train station and main bus station.
               </p>
+              <p>
+                We'll order some sharing food for a light lunch, and people can order from the bar menu if they
+                want something more substantial.
+              </p>
+              <p>
+                <b>Getting to the Oxford Retreat:</b> It's about a 15 minute walk from the hotel, through the city center.
+                It's a couple of minutes' walk to the train station, bus station, or bus to the park and ride.
+              </p>
+              <motion.iframe
+                layout
+                title={'15 Minute Walk to the Oxford Retreat'}
+                src={'https://www.google.com/maps/d/u/1/embed?mid=11u5xYYe2CETV6Zt25zNBpJCrAhPp66M&ehbc=2E312F'}
+                height="300"
+                className="border rounded-sm"
+                allowFullScreen={false}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></motion.iframe>
             </CardSection>
           </Card>
         </motion.div>
