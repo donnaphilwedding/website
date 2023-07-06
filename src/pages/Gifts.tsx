@@ -11,12 +11,25 @@ export const Gifts: FC = () => {
         <div className="flex flex-col gap-10 md:gap-5 w-full">
           <Card title="Gift Registry">
             <p>
-              Instead of a gift registry, we've decided to collect donations for a local charity. We'll be starting an
-              online collection page once we work out how to do that- cash donations will also be accepted at the
-              Saturday evening event.
+              Instead of a gift registry, we've decided to collect donations for Nai's House- a local mental health
+              charity.
             </p>
             <p>
-              Please don't feel any pressure to donate. We appreciate that travel and accommodation at a wedding is a
+              Nai’s House is a blended youth and wellbeing service that offers a new way to access and receive mental
+              health support. Their approach is non-clinical and it has been developed from the view point of the
+              service user. It is backed by research and incorporates many of the ideals that youth consultations and
+              agencies have highlighted a need for. This means they can deliver a service that is flexible and informal
+              in its approach.
+            </p>
+            <p>
+              If you'd like to donate, you can do it through our{' '}
+              <a className="underline text-blue-700" href="https://www.justgiving.com/page/donnaphilwedding">
+                Just Giving
+              </a>{' '}
+              page, or by bringing cash to the event.
+            </p>
+            <p>
+              Please don't feel any pressure to donate! We appreciate that travel and accommodation at a wedding is a
               big expense, and we're incredibly grateful that so many people are willing to come to Oxford to celebrate
               with us.
             </p>

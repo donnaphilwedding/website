@@ -92,7 +92,10 @@ export const Faq: FC = () => {
                 Annoyingly, the parking isn't great near the Eastgate. Apparently they have a few parking spaces
                 available, but they have to be booked in advance.
               </p>
-              <p>We recommend using one of the park and rides, or parking in Forest Hill and getting a taxi.</p>
+              <p>
+                If you're staying for just the weekend, we recommend using the local park and ride. If you're staying
+                for longer, we recommend parking in Forest Hill and getting a taxi.
+              </p>
               <motion.iframe
                 layout
                 title={'Park and Rides Around Oxford'}
@@ -115,13 +118,10 @@ export const Faq: FC = () => {
             </Question>
             <Question question="Will there be a wedding cake?">
               <p>
-                We haven't completely decided on this yet, but we're unlikely to have a traditional cake on the
-                Saturday.
+                We've decided not to have a wedding cake. Instead, we're going to have a dessert buffet on the Saturday,
+                with a range of different options for people to snack out throughout the evening.
               </p>
-              <p>
-                Instead, we're going to have a dessert buffet, with a range of different options for people to snack out
-                throughout the evening.
-              </p>
+              <p>We're also going to be ordering something special for the Friday night!</p>
             </Question>
           </Card>
           <Card title="Travel" collapsible>
