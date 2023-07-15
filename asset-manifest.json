@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/website/static/css/main.20e2171b.css",
-    "main.js": "/website/static/js/main.71719b5a.js",
+    "main.css": "/website/static/css/main.0f46a941.css",
+    "main.js": "/website/static/js/main.20324248.js",
     "static/js/787.28cb0dcd.chunk.js": "/website/static/js/787.28cb0dcd.chunk.js",
     "static/media/Jessie.jpg": "/website/static/media/Jessie.9433666c2095a79829dc.jpg",
     "static/media/museum.jpg": "/website/static/media/museum.f8a2e178ad1d4fd530e0.jpg",
     "static/media/AlexWedding.jpg": "/website/static/media/AlexWedding.15ddd50aaa32da57036d.jpg",
-    "static/media/breakWhite.svg": "/website/static/media/breakWhite.af306fc1961a3a463d815a09282f06c8.svg",
-    "static/media/break.svg": "/website/static/media/break.f5980c22c873dece6e75b16063d787c2.svg",
+    "static/media/breakWhite.svg": "/website/static/media/breakWhite.c8e8baa47080059bd26c277135c7df45.svg",
+    "static/media/break.svg": "/website/static/media/break.1968e614f02113753159d5d14f808d16.svg",
     "static/media/HotelLounge.png": "/website/static/media/HotelLounge.7b7c03adf6dd8e19d138.png",
     "static/media/HotelExterior.png": "/website/static/media/HotelExterior.19f03a2ec75f42b2cd26.png",
     "static/media/HotelBar.png": "/website/static/media/HotelBar.79baa50dbe3781d6187b.png",
+    "static/media/NaisHouseLogo.png": "/website/static/media/NaisHouseLogo.ea125af0865ea10af7c0.png",
     "index.html": "/website/index.html",
-    "main.20e2171b.css.map": "/website/static/css/main.20e2171b.css.map",
-    "main.71719b5a.js.map": "/website/static/js/main.71719b5a.js.map",
+    "main.0f46a941.css.map": "/website/static/css/main.0f46a941.css.map",
+    "main.20324248.js.map": "/website/static/js/main.20324248.js.map",
     "787.28cb0dcd.chunk.js.map": "/website/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20e2171b.css",
-    "static/js/main.71719b5a.js"
+    "static/css/main.0f46a941.css",
+    "static/js/main.20324248.js"
   ]
 }
