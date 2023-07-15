@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Card } from '../components/card/Card';
 import { PageContainer } from '../components/PageContainer';
 import { PageTitleCard } from '../components/PageTitleCard';
+import NaisHouseLogo from '../images/NaisHouseLogo.png';
 
 export const Gifts: FC = () => {
   return (
@@ -14,6 +15,10 @@ export const Gifts: FC = () => {
               Instead of a gift registry, we've decided to collect donations for Nai's House- a local mental health
               charity.
             </p>
+            <div
+              className="w-[250px] h-[100px] bg-no-repeat bg-contain bg-center mx-auto rounded-md"
+              style={{ backgroundImage: `url(${NaisHouseLogo})` }}
+            />
             <p>
               Nai’s House is a blended youth and wellbeing service that offers a new way to access and receive mental
               health support. Their approach is non-clinical and it has been developed from the view point of the
