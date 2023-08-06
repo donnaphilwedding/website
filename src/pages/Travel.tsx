@@ -37,22 +37,22 @@ export const Travel: FC = () => {
               Street.
             </p>
             <p>
-              Taxis are available outside the station, or it's a one mile to the Eastgate Hotel. Due to Oxford's
-              traffic system, the shortest taxi route is three miles long, so it will likely be faster to walk.
+              Taxis are available outside the station, or it's a one mile to the Eastgate Hotel. Due to Oxford's traffic
+              system, the shortest taxi route is three miles long, so it will likely be faster to walk.
             </p>
           </Card>
           <Card secondary title="Arriving by car" collapsible>
             <p>
               Driving in central Oxford is fairly difficult. The Eastgate Hotel has a very limited amount of parking,
-              which needs to be booked in advance.
+              which has a £20 per night charge, and is only available on a first come, first served basis.
             </p>
             <p>
-              If you’re here for the weekend, the best plan is to leave your car at one of the park and ride sites around
-              the city, and get a bus into town.
+              If you’re here for the weekend, the best plan is to leave your car at one of the park and ride sites
+              around the city, and get a bus into town.
             </p>
             <p>
-              If you're here for longer than that, you can park near our house in Forest Hill and get a taxi into the city. Let us know if you want to
-              do this.
+              If you're here for longer than that, you can park near our house in Forest Hill and get a taxi into the
+              city. Let us know if you want to do this.
             </p>
             <motion.iframe
               layout

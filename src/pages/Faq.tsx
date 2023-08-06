@@ -30,7 +30,7 @@ export const Faq: FC = () => {
                 there in comfortable shoes and change, that's totally fine.
               </p>
             </Question>
-            <Question question="Why can't we walk around with red wine?">
+            <Question question="Why is there no red wine?">
               <p>
                 The natural history museum is a listed building, so there are quite a few restrictions on what can be
                 served. The biggest concern is the original stone floor- if a dark coloured drink gets spilt on it, it's
@@ -38,8 +38,13 @@ export const Faq: FC = () => {
               </p>
               <p>
                 As a result, the bar will have a slightly reduced menu- apologies if they don't have your favourite
-                drink! We'll also need to be careful with red wine and coffee- you'll need to sit at a table if you're
-                drinking either of those.
+                drink! We'll also need to be careful with coffee- you'll need to be sitting at a table to drink it.
+              </p>
+            </Question>
+            <Question question="What happens if I spill a drink or drop food?">
+              <p>
+                Let the museum staff know straight away. It'll probably be fine, but they might need to treat the floor
+                to prevent staining.
               </p>
             </Question>
             <Question question="Will there be a quiet area in the museum?">
@@ -47,7 +52,7 @@ export const Faq: FC = () => {
             </Question>
             <Question question="Can I bring my partner?">
               <p>
-                Of course! We'll need to know by early August if you're bringing someone, because we'll need to sort out
+                Of course! We'll need to know by late August if you're bringing someone, because we'll need to sort out
                 the seating plan and the food order. No worries if they weren't named on the invite.
               </p>
             </Question>
@@ -78,15 +83,6 @@ export const Faq: FC = () => {
             </Question>
           </Card>
           <Card title="Accommodation" collapsible>
-            <Question question="How do we book hotel rooms at the Eastgate?">
-              <p>Just let Donna or Phil know you want a room and we'll arrange one for you.</p>
-            </Question>
-            <Question question="Would an AirBnb be better than a hotel room?">
-              <p>
-                The AirBnb choice around Oxford isn't great. A room in a shared house is probably going to be over £100.
-                There are some apartments and houses, but they're mostly in the outskirts of the city.
-              </p>
-            </Question>
             <Question question="Where can we park near the Eastgate hotel?">
               <p>
                 Annoyingly, the parking isn't great near the Eastgate. Apparently they have a few parking spaces
@@ -114,6 +110,46 @@ export const Faq: FC = () => {
               <p>
                 We'd originally hoped to get the food out earlier, but the caterers only get to start setting up at 5pm
                 when the museum closes.
+              </p>
+              <p>
+                The Eastgate bar has a selection of snacks, so we recommend people grab something there if they're used
+                to eating earlier.
+              </p>
+            </Question>
+            <Question question="What will the menu be?">
+              <p>We may make small changes to this closer to the time, but here's the current plan.</p>
+              <p>
+                The canapes are likely to be:
+                <ul>
+                  <li>- Sundried tomato bruschetta (vegan)</li>
+                  <li>- Asparagus and cream cheese on toasted rye (vegan)</li>
+                  <li>- Mac and cheese croquette</li>
+                  <li>- Lamb skewer with salsa verde</li>
+                  <li>- Mini chicken pie</li>
+                  <li>- Steak and chip</li>
+                </ul>
+              </p>
+              <p>
+                We'll be doing a buffet for the main course.
+                <ul>
+                  <li>- Roast beef and yorkshire puddings</li>
+                  <li>- Chicken supreme</li>
+                  <li>- Lentil and beetroot wellington (vegan)</li>
+                  <li>- Roast potatoes (vegan)</li>
+                  <li>- Dauphinois potatoes</li>
+                  <li>- Roasted root vegetables</li>
+                  <li>- Mixed greens</li>
+                </ul>
+              </p>
+              <p>
+                Then, we'll have a dessert table for the evening after the speeches:
+                <ul>
+                  <li>- Selection of brownies</li>
+                  <li>- Orange and passion fruit posset</li>
+                  <li>
+                    - Something which isn't strawberries and cream, because the museum won't let us have anything red
+                  </li>
+                </ul>
               </p>
             </Question>
             <Question question="Will there be a wedding cake?">

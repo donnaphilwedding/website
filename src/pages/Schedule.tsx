@@ -18,9 +18,6 @@ export const Schedule: FC = () => {
       <motion.div layout className="flex flex-col items-center gap-5 py-10">
         <PageTitleCard name="Schedule" className="md:hidden" />
         <motion.div layout className="flex flex-col gap-10 md:gap-5 w-full">
-          <Card secondary title="Provisional Schedule">
-            <p>This is a work in progress schedule. Times are likely to change!</p>
-          </Card>
           {!weddingParty ? (
             <Card title="The Week Before">
               <CardContent>
@@ -58,8 +55,9 @@ export const Schedule: FC = () => {
                   </p>
                   <p>
                     <b>Getting to Forest Hill:</b> There are buses out of the city center, but it's probably easy and
-                    cheaper to take a taxi between four people. Royal Cars (01865 777 333) are usually pretty good, and
-                    they have an app which works a bit like Uber.
+                    cheaper to take a taxi between four people. 001 Taxis (01865 240000) are usually pretty good, and
+                    they have an app which works a bit like Uber. They have child seats available, but you'll need to
+                    book in advance to get one.
                   </p>
                 </CardSection>
                 <CardSection title="18:00 - 21:00: Dinner at the Talkhouse">
@@ -73,7 +71,7 @@ export const Schedule: FC = () => {
                   </p>
                   <p>
                     <b>Getting back to Oxford:</b> We strongly recommend pre-booking taxis. It's a bit of a pain for the
-                    drivers to come out to where we live, so there's sometimes quite a wait if you don't pre-book.
+                    drivers to come out to where we live, so there's sometimes a 20-30 minute wait if you don't pre-book.
                   </p>
                 </CardSection>
               </Card>

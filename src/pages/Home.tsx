@@ -33,7 +33,7 @@ export const Home: FC = () => {
               <Link className="underline" to="/schedule">
                 here
               </Link>{' '}
-              to see the schedule.
+              to see the schedule. The online RSVP is closed- if you need to change your response, please message us!
             </p>
           </div>
           <div

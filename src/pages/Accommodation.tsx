@@ -33,12 +33,8 @@ export const Accommodation: FC = () => {
           </div>
           <Card title="Booking Rooms" secondary>
             <p>
-              There should be enough rooms for everyone who wants to stay. If you want a room, please let us know when
-              you RSVP!
-            </p>
-            <p>
-              We'll need to finalise the booking by July 1st. Rooms may be available after this, but not at the
-              discounted rate.
+              Everyone who asked for a room has one. If anyone wants a late room, they'll need to book through
+              the hotel.
             </p>
           </Card>
           <div
