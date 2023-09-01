@@ -33,7 +33,10 @@ export const Schedule: FC = () => {
             <>
               <Card title="Wednesday 13th September" collapsible>
                 <CardSection title="10:30 - 11:00: The Ceremony">
-                  <CardContent>We're holding the ceremony at 10:30 at the registry office in Oxford.</CardContent>
+                  <CardContent>
+                    We're holding the ceremony at 10:30 at the registry office in Oxford. The address is 1 Tidmarsh
+                    Lane, OX1 1NS.
+                  </CardContent>
                   <CardContent>
                     The room we're using can only accommodate 23 people. We're hoping to include as many people as
                     possible, but we can't promise to fit absolutely everyone. Let us know beforehand if you want to be
@@ -47,23 +50,27 @@ export const Schedule: FC = () => {
                     <b>Dress code:</b> Casual
                   </CardContent>
                 </CardSection>
-                <CardSection title="14:00 - 18:00: Garden Party at our house">
+                <CardSection title="14:30 - 18:00: Garden Party at our house">
                   <p>We'll be having a party in our garden, so people can come and see our house.</p>
                   <p>More importantly, people can come and meet Jessie!</p>
                   <p>
                     <b>Dress code:</b> An excited labrador will probably jump on you.
                   </p>
                   <p>
-                    <b>Getting to Forest Hill:</b> There are buses out of the city center, but it's probably easy and
+                    <b>Getting to Forest Hill:</b> There are buses out of the city center, but it's probably easier and
                     cheaper to take a taxi between four people. 001 Taxis (01865 240000) are usually pretty good, and
-                    they have an app which works a bit like Uber. They have child seats available, but you'll need to
-                    book in advance to get one.
+                    they have an app which works a bit like Uber.
+                  </p>
+                  <p>
+                    Our address is 3 Mickle Way, Forest Hill, Oxford, OX33 1DU. Occasionally, taxi drivers aren't sure
+                    where Forest Hill is- if they ask you, tell them it's just up the A40 from the Headington
+                    Roundabout.
                   </p>
                 </CardSection>
                 <CardSection title="18:00 - 21:00: Dinner at the Talkhouse">
                   <p>
-                    We're booked in for a meal at our local pub, which does great food. The menu changes seasonally,
-                    so we'll send a link out once we know what they'll be serving.
+                    We're booked in for a meal at our local pub, which does great food. We've put in a preorder for
+                    food, people can get drinks at the bar.
                   </p>
                   <p>
                     <b>Getting to The Talkhouse:</b> The pub is about half a mile's walk from our house. We'll likely
@@ -71,7 +78,8 @@ export const Schedule: FC = () => {
                   </p>
                   <p>
                     <b>Getting back to Oxford:</b> We strongly recommend pre-booking taxis. It's a bit of a pain for the
-                    drivers to come out to where we live, so there's sometimes a 20-30 minute wait if you don't pre-book.
+                    drivers to come out to where we live, so there's sometimes a 20-30 minute wait if you don't
+                    pre-book.
                   </p>
                 </CardSection>
               </Card>
@@ -171,16 +179,14 @@ export const Schedule: FC = () => {
           <Card secondary title="Sunday 17th September" collapsible>
             <CardSection title="7:30 - 10:30: Breakfast at Eastgate Hotel"></CardSection>
             <CardSection title="12:00 - 15:00: Lunch at the Oxford Retreat">
+              <p>We've booked large space in a pub which is very close to the train station and main bus station.</p>
               <p>
-                We've booked large space in a pub which is very close to the train station and main bus station.
+                We'll order some sharing food for a light lunch, and people can order from the bar menu if they want
+                something more substantial.
               </p>
               <p>
-                We'll order some sharing food for a light lunch, and people can order from the bar menu if they
-                want something more substantial.
-              </p>
-              <p>
-                <b>Getting to the Oxford Retreat:</b> It's about a 15 minute walk from the hotel, through the city center.
-                It's a couple of minutes' walk to the train station, bus station, or bus to the park and ride.
+                <b>Getting to the Oxford Retreat:</b> It's about a 15 minute walk from the hotel, through the city
+                center. It's a couple of minutes' walk to the train station, bus station, or bus to the park and ride.
               </p>
               <motion.iframe
                 layout
